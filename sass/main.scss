@@ -1,7 +1,20 @@
+// Pages
+
 @import "/sass/pages/home";
+
 @import "/sass/pages/a-propos";
+
 @import "/sass/pages/_calculateur.scss";
+
 @import "/sass/pages/_contact.scss ";
+
 @import "/sass/pages/_mode-emplois.scss";
+
 @import "/sass/pages/_trouver-velib.scss";
+
 @import "/sass/main._css";
+
+// Nav / Footer
+
+@import "/sass/layout/navigation";
+@import "/sass/layout/footer";
