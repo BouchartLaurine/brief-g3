@@ -3,66 +3,105 @@
 /* --------------------------------- DON'T TOUCH --------------------------------- */
 /* variable */
 /* Pages*/
-.text-gauche {
-  max-width: 500px;
-  text-align: left;
+/******a-propos *******/
+.pro_main {
+  display: flex;
+  justify-content: center;
+  align-content: left;
+  width: 100%;
+  height: 70%;
+  border: 3px solid rgb(226, 43, 186);
 }
 
-.text-principal h1 {
-  font-size: 2.5em;
-  color: #000000;
-  margin-bottom: 15px;
+/* Styles globaux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.text-principal p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-  color: #555;
+.main-home {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.container-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text-left {
+  flex: 1;
+  max-width: 600px;
+  margin-left: 30px;
+}
+
+.main-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.main-text p {
+  color: #666;
+  margin-bottom: 1.5rem;
 }
 
 .button-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
-.button-group p {
-  margin: 0;
+.image {
+  flex: 1;
+  text-align: right;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.image img {
+  width: 500px;
+  height: 500px;
 }
 
-button.commencer {
-  background-color: #2c8a5f;
-  color: #fff;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container-principal {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-left {
+    max-width: 100%;
+  }
+  .main-text h1 {
+    font-size: 2rem;
+  }
+  .button-group {
+    flex-direction: column;
+  }
+  .button-group p {
+    margin: 0.5rem 0;
+  }
+  .image {
+    margin-top: 2rem;
+  }
 }
-
-button.commencer:hover {
-  background-color: #237146;
+@media (max-width: 480px) {
+  .main-text h1 {
+    font-size: 1.8rem;
+  }
+  .main-text p {
+    font-size: 0.9rem;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
 }
-
-button.plus {
-  background-color: #ddd;
-  color: #333;
-}
-
-button.plus:hover {
-  background-color: #bbb;
-}
-
-.image-section img {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-}
-
 /* Variables */
 :root {
   --green: #019961;
@@ -166,18 +205,31 @@ button.plus:hover {
 
 /****** trouver-velib.scss******/
 .PC {
-  width: 1920px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  border: 3px solid rgb(43, 67, 226);
+}
+
+.con_center {
   display: flex;
-  margin-top: 20%;
-  margin-bottom: 20%;
-  background: #3DAD5C;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  border: 3px solid rgb(226, 43, 186);
 }
 
 .tr_container {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   align-items: center;
-  border: 3px solid blueviolet;
+  border: 3px solid green;
+}
+
+.text_center {
+  text-align: center;
 }
 
 .con_row {
@@ -185,6 +237,32 @@ button.plus:hover {
   flex-direction: row;
   padding: 0 5px;
   border: 3px solid red;
+}
+
+H2 {
+  font-family: "Monserrat Semi Bold";
+  font-size: x-large;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add space between boxes */
+}
+
+.countdown-box {
+  background-color: #019961;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 20px;
+  width: inherit; /* Adjust box size */
+  text-align: center;
+}
+
+.label {
+  font-size: 0.8em;
+  margin-top: 5px;
+  color: #ffffff;
 }
 
 p {
@@ -237,13 +315,13 @@ footer .footer-menu {
 
 footer .footer-menu li a {
   text-decoration: none;
-  color: #555;
-  font-size: 0.9rem;
+  color: #3DAD5C;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 footer .footer-menu li a:hover {
-  color: #2a9d8f;
+  color: #79C258;
 }
 
 /* --------------------------------- Navigation --------------------------------- */
@@ -272,14 +350,14 @@ header {
 
 .menu a {
   text-decoration: none;
-  font-size: 1rem;
-  color: #333333;
+  font-size: 1.2rem;
+  color: #3DAD5C;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .menu a:hover {
-  color: #4caf50;
+  color: #79C258;
 }
 
 .menu-toggle {
@@ -295,6 +373,12 @@ header {
   width: 25px;
   margin: 4px 0;
   transition: 0.4s;
+}
+
+.logo-p {
+  width: 150px;
+  height: 100px;
+  padding-left: 70px;
 }
 
 @media (max-width: 768px) {
