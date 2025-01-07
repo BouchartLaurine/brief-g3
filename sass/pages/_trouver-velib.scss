@@ -1,0 +1,27 @@
+/****** trouver-velib.scss******/
+.PC{
+  width:1920px ;
+  height: 1080px;
+  display: flex;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  background:$main-background-color ;
+}
+
+// setting contents in the middle inside container
+.tr_container{
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blueviolet;
+}
+
+// setting each conents in center
+.in-contents{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  border: 3px solid red;
+}
