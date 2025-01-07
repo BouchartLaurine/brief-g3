@@ -5,11 +5,10 @@
 
   display: flex;
   justify-content: space-between;
-  .comment-marche {
-    margin-left: 1%;
-  }
 }
-
+.comment-marche {
+  margin-left: 10%;
+}
 .block-align-emp {
   display: flex;
   justify-content: space-between;
@@ -32,14 +31,6 @@
   padding: 10px;
   box-shadow: 6px 4px 16px;
   // background-color: rgb(115, 24, 175);
-  max-width: 20%;
-  text-align: center;
-}
-
-/* Résultats */
-
-.results-emplois {
-  // background-color: green;
   max-width: 20%;
   text-align: center;
 }

@@ -10,19 +10,26 @@
   <body>
     <header class="header-contact">
       <!-- Nav -->
-      <nav>
-        <ul>
-          <li>
-            <img src="/ressources/co2 WEB/co2 WEB/Logo-co2-web.svg" alt="" />
-          </li>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="mode-emplois.html">Mode d'emploi</a></li>
-          <li><a href="trouver-velib.html">Trouver un velib</a></li>
-          <li><a href="calculateur.html">Calculateur</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo"
+            ><img src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""
+          /></a>
+          <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="mode-emplois.html">Mode d'emploi</a></li>
+            <li><a href="trouver-velib.html">Trouver un vélib</a></li>
+            <li><a href="calculateur.html">Calculateur</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     </header>
     <!-- End of Nav -->
     <main>
@@ -75,7 +82,9 @@
 
               <textarea id="message" placeholder="Message" required></textarea>
             </div>
-            <button type="submit" class="submit-button">Commencer</button>
+            <div class="submit-button-align">
+              <button type="submit" class="submit-button">Commencer</button>
+            </div>
           </form>
         </div>
       </section>

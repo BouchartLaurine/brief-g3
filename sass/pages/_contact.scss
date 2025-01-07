@@ -34,6 +34,7 @@
   div {
     flex: 1;
     background-color: red;
+
     label {
       display: block;
       margin-bottom: 5px;
@@ -53,7 +54,7 @@
 // Button
 
 .submit-button {
-  background: var(--green);
+  background: linear-gradient(to bottom right, --green, --light-green);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -61,4 +62,9 @@
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
+}
+
+.submit-button-align {
+  display: flex;
+  flex-direction: row-reverse;
 }
