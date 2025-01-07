@@ -8,28 +8,26 @@
     <link rel="stylesheet" href="/sass/pages/_contact.scss" />
   </head>
   <body>
+    <!-- Nav -->
     <header class="header-contact">
-      <!-- Nav -->
-      <header>
-        <nav class="navbar">
-          <a href="index.html" class="logo"
-            ><img src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""
-          /></a>
-          <div class="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <ul class="menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="mode-emplois.html">Mode d'emploi</a></li>
-            <li><a href="trouver-velib.html">Trouver un vélib</a></li>
-            <li><a href="calculateur.html">Calculateur</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="navbar">
+        <a href="index.html" class="logo"
+          ><img src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""
+        /></a>
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="mode-emplois.html">Mode d'emploi</a></li>
+          <li><a href="trouver-velib.html">Trouver un vélib</a></li>
+          <li><a href="calculateur.html">Calculateur</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- End of Nav -->
     <main>
@@ -78,11 +76,17 @@
             </div>
             <!-- Message -->
             <div class="form-group">
-              <label for="message">Votre message</label>
-
-              <textarea id="message" placeholder="Message" required></textarea>
+              <div>
+                <label for="message">Votre message</label>
+                <br />
+                <textarea
+                  id="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
             </div>
-            <div class="submit-button-form">
+            <div class="submit-button-position">
               <button type="submit" class="submit-button">Commencer</button>
             </div>
           </form>
@@ -91,13 +95,13 @@
     </main>
     <footer>
       <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="mode-emplois.html">Mode d'emploi</a></li>
-          <li><a href="trouver-velib.html">Trouver un velib</a></li>
-          <li><a href="calculateur.html">Calculateur</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul class="footer-menu">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Mode d'emploi</a></li>
+          <li><a href="#">Trouver un vélib</a></li>
+          <li><a href="#">Calculateur</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </footer>

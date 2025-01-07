@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --------------------------------- Main Sass input file --------------------------------- */
 /* --------------------------------- DON'T TOUCH --------------------------------- */
 /* variable */
@@ -85,12 +86,14 @@ button.plus:hover {
 .main-block-contact {
   margin-top: 5%;
   margin-left: 5%;
+  width: 100%;
+  height: 100%;
 }
 
 .form-bg {
   border: 0px solid;
   padding: 50px;
-  box-shadow: 6px 4px 16px;
+  box-shadow: 1px 1px 20px;
   max-width: 50%;
   margin-left: 25%;
 }
@@ -99,11 +102,10 @@ button.plus:hover {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  background-color: blue;
+  gap: 5%;
 }
 .form-group div {
   flex: 1;
-  background-color: red;
 }
 .form-group div label {
   display: block;
@@ -116,10 +118,16 @@ button.plus:hover {
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: none;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.1725490196);
 }
 
-.submit-button-form {
+.form-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button-position {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -132,7 +140,8 @@ button.plus:hover {
 }
 
 .comment-marche {
-  margin-left: 10%;
+  margin-left: 5%;
+  font-size: larger;
 }
 
 .block-align-emp {
@@ -153,7 +162,14 @@ button.plus:hover {
 .use-calculateur {
   border: 0px solid;
   padding: 10px;
-  box-shadow: 6px 4px 16px;
+  box-shadow: 1px 1px 20px;
+  background-color: rgb(255, 255, 255);
+  max-width: 20%;
+  text-align: center;
+}
+
+/* Résultats */
+.results-emplois {
   max-width: 20%;
   text-align: center;
 }

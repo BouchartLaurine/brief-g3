@@ -2,12 +2,12 @@
 
 .main-block-emplois {
   margin-top: 5%;
-
   display: flex;
   justify-content: space-between;
 }
 .comment-marche {
-  margin-left: 10%;
+  margin-left: 5%;
+  font-size: larger;
 }
 .block-align-emp {
   display: flex;
@@ -19,7 +19,7 @@
 
 /* Analyse */
 .analyse {
-  // background-color: red;
+  //background-color: red;
   max-width: 20%;
   text-align: center;
 }
@@ -29,8 +29,16 @@
 .use-calculateur {
   border: 0px solid;
   padding: 10px;
-  box-shadow: 6px 4px 16px;
-  // background-color: rgb(115, 24, 175);
+  box-shadow: 1px 1px 20px;
+  background-color: rgb(255, 255, 255);
+  max-width: 20%;
+  text-align: center;
+}
+
+/* Résultats */
+
+.results-emplois {
+  // background-color: green;
   max-width: 20%;
   text-align: center;
 }
