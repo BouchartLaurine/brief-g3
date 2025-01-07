@@ -1,0 +1,64 @@
+/* Variables */
+:root {
+  --green: #019961;
+  --light-green: #85d653;
+}
+
+// Main
+
+.title-contact {
+  margin-left: 50%;
+}
+
+.main-block-contact {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+// Form
+
+.form-bg {
+  border: 0px solid;
+  padding: 50px;
+  box-shadow: 6px 4px 16px;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: blue;
+
+  div {
+    flex: 1;
+    background-color: red;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: var(--font-color);
+    }
+  }
+}
+
+.form-group input,   //Hauteur entre les lignes
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+// Button
+
+.submit-button {
+  background: var(--green);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}

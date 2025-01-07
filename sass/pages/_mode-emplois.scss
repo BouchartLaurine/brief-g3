@@ -1,13 +1,26 @@
+/* Main */
+
 .main-block-emplois {
-  margin-left: 5%;
   margin-top: 5%;
-  background-color: brown;
+
   display: flex;
   justify-content: space-between;
+  .comment-marche {
+    margin-left: 1%;
+  }
 }
+
+.block-align-emp {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
 /* Analyse */
 .analyse {
-  background-color: red;
+  // background-color: red;
   max-width: 20%;
   text-align: center;
 }
@@ -15,7 +28,10 @@
 /* Calculateur */
 
 .use-calculateur {
-  background-color: blue;
+  border: 0px solid;
+  padding: 10px;
+  box-shadow: 6px 4px 16px;
+  // background-color: rgb(115, 24, 175);
   max-width: 20%;
   text-align: center;
 }
@@ -23,7 +39,7 @@
 /* Résultats */
 
 .results-emplois {
-  background-color: green;
+  // background-color: green;
   max-width: 20%;
   text-align: center;
 }

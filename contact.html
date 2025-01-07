@@ -4,64 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactez-nous</title>
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="/sass/main.css" />
+    <link rel="stylesheet" href="/sass/pages/_contact.scss" />
   </head>
   <body>
-    <header>
+    <header class="header-contact">
       <!-- Nav -->
       <nav>
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Mode d'emploi</a></li>
-          <li><a href="#">Trouver un velib</a></li>
-          <li><a href="#">Calculateur</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#" class="active">Contact</a></li>
+          <li>
+            <img src="/ressources/co2 WEB/co2 WEB/Logo-co2-web.svg" alt="" />
+          </li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="mode-emplois.html">Mode d'emploi</a></li>
+          <li><a href="trouver-velib.html">Trouver un velib</a></li>
+          <li><a href="calculateur.html">Calculateur</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <!-- End of Nav -->
     <main>
-      <section class="contact-section">
-        <h1>Contactez-nous</h1>
-        <form>
-          <div class="form-group">
-            <div>
-              <label for="prenom">Prénom</label>
-              <input type="text" id="prenom" placeholder="Prénom" />
+      <section class="main-block-contact">
+        <div class="title-contact">
+          <h1>Contactez-nous</h1>
+        </div>
+        <div class="form-bg">
+          <form>
+            <!-- Nom prenom -->
+            <div class="form-group">
+              <div>
+                <label for="prenom">Prénom</label>
+                <br />
+                <input type="text" id="prenom" placeholder="Prénom" required />
+              </div>
+              <div>
+                <label for="nom">Nom</label>
+                <br />
+                <input type="text" id="nom" placeholder="Nom" required />
+              </div>
             </div>
-            <div>
-              <label for="nom">Nom</label>
-              <input type="text" id="nom" placeholder="Nom" />
+            <!-- Email tel -->
+            <div class="form-group">
+              <div>
+                <label for="email">Votre email</label>
+                <br />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="votre@email.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="telephone">Téléphone</label>
+                <br />
+                <input
+                  type="tel"
+                  id="telephone"
+                  placeholder="Numéro"
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div>
-              <label for="email">Votre email</label>
-              <input type="email" id="email" placeholder="votre@email.com" />
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message">Votre message</label>
+
+              <textarea id="message" placeholder="Message" required></textarea>
             </div>
-            <div>
-              <label for="telephone">Téléphone</label>
-              <input type="tel" id="telephone" placeholder="Numéro" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Votre message</label>
-            <textarea id="message" placeholder="Message"></textarea>
-          </div>
-          <button type="submit" class="submit-button">Commencer</button>
-        </form>
+            <button type="submit" class="submit-button">Commencer</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
       <nav>
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Mode d'emploi</a></li>
-          <li><a href="#">Trouver un velib</a></li>
-          <li><a href="#">Calculateur</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#" class="active">Contact</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="mode-emplois.html">Mode d'emploi</a></li>
+          <li><a href="trouver-velib.html">Trouver un velib</a></li>
+          <li><a href="calculateur.html">Calculateur</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </footer>
