@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* --------------------------------- Main Sass input file --------------------------------- */
 /* --------------------------------- DON'T TOUCH --------------------------------- */
 /* variable */
@@ -50,15 +49,9 @@
   border: 1px solid #ddd;
 }
 
-.submit-button {
-  background: var(--green);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 40px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
+.submit-button-form {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /* Main */
@@ -67,8 +60,9 @@
   display: flex;
   justify-content: space-between;
 }
-.main-block-emplois .comment-marche {
-  margin-left: 1%;
+
+.comment-marche {
+  margin-left: 10%;
 }
 
 .block-align-emp {
@@ -90,12 +84,6 @@
   border: 0px solid;
   padding: 10px;
   box-shadow: 6px 4px 16px;
-  max-width: 20%;
-  text-align: center;
-}
-
-/* Résultats */
-.results-emplois {
   max-width: 20%;
   text-align: center;
 }
@@ -131,6 +119,18 @@ p {
 h1 {
   font-family: "Monserrat Semi Bold";
   font-size: inherit;
+}
+
+.submit-button {
+  background: linear-gradient(to bottom right, #85d653, #019961);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------------------- Navigation --------------------------------- */
