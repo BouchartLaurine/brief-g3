@@ -1,20 +1,45 @@
-// Pages
+/* --------------------------------- Main Sass input file --------------------------------- */
 
-@import "/sass/pages/home";
+/* --------------------------------- DON'T TOUCH --------------------------------- */
+
+/* Pages*/
 
 @import "/sass/pages/a-propos";
+@import "/sass/pages/home";
+@import "/sass/pages/calculateur";
+@import "/sass/pages/contact";
+@import "/sass/pages/mode-emplois";
+@import "/sass/pages/trouver-velib";
+//@import "/sass/main._css";
 
-@import "/sass/pages/_calculateur.scss";
 
-@import "/sass/pages/_contact.scss ";
 
-@import "/sass/pages/_mode-emplois.scss";
+//abstract
+@import "/sass/abstracts/mixins";
+@import "/sass/abstracts/variabless";
 
-@import "/sass/pages/_trouver-velib.scss";
+//base
+@import "/sass/base/reset";
+@import "/sass/base/typography";
 
-@import "/sass/main._css";
+// components
+@import "/sass/components/buttons";
+@import "/sass/components/carousel";
+@import "/sass/components/cover";
+@import "/sass/components/dropdown";
 
-// Nav / Footer
-
-@import "/sass/layout/navigation";
+//layout
+@import "/sass/layout/flexbox";
 @import "/sass/layout/footer";
+@import "/sass/layout/forms";
+@import "/sass/layout/header";
+@import "/sass/layout/navigation";
+@import "/sass/layout/sidebar";
+
+
+//themes
+@import "/sass/themes/admin";
+@import "/sass/themes/theme";
+
+//vendors
+@import "/sass/vendors/bootstrap";
