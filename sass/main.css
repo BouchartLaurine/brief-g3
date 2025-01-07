@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* --------------------------------- Main Sass input file --------------------------------- */
+/* --------------------------------- DON'T TOUCH --------------------------------- */
+/* variable */
+/* Pages*/
+.main-block-emplois {
+  margin-left: 5%;
+  margin-top: 5%;
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Analyse */
+.analyse {
+  background-color: red;
+  max-width: 20%;
+  text-align: center;
+}
+
+/* Calculateur */
+.use-calculateur {
+  background-color: blue;
+  max-width: 20%;
+  text-align: center;
+}
+
+/* Résultats */
+.results-emplois {
+  background-color: green;
+  max-width: 20%;
+  text-align: center;
+}
+
+/****** trouver-velib.scss******/
+.PC {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  background: #3DAD5C;
+}
+
+.tr_container {
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blueviolet;
+}
+
+.con_row {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5px;
+  border: 3px solid red;
+}
+
+p {
+  font-family: "Roboto regular";
+  font-size: large;
+}
+
+h1 {
+  font-family: "Monserrat Semi Bold";
+  font-size: inherit;
+}/*# sourceMappingURL=main.css.map */

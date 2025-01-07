@@ -2,44 +2,42 @@
 
 /* --------------------------------- DON'T TOUCH --------------------------------- */
 
+//abstract
+@import "abstracts/mixins";
+@import "abstracts/variabless";
+
 /* Pages*/
 
-@import "/sass/pages/a-propos";
-@import "/sass/pages/home";
-@import "/sass/pages/calculateur";
-@import "/sass/pages/contact";
-@import "/sass/pages/mode-emplois";
-@import "/sass/pages/trouver-velib";
+@import "pages/a-propos";
+@import "pages/home";
+@import "pages/calculateur";
+@import "pages/contact";
+@import "pages/mode-emplois";
+@import "pages/trouver-velib";
 //@import "/sass/main._css";
 
 
-
-//abstract
-@import "/sass/abstracts/mixins";
-@import "/sass/abstracts/variabless";
-
 //base
-@import "/sass/base/reset";
-@import "/sass/base/typography";
+@import "base/reset";
+@import "base/typography";
 
 // components
-@import "/sass/components/buttons";
-@import "/sass/components/carousel";
-@import "/sass/components/cover";
-@import "/sass/components/dropdown";
+@import "components/buttons";
+@import "components/carousel";
+@import "components/cover";
+@import "components/dropdown";
 
 //layout
-@import "/sass/layout/flexbox";
-@import "/sass/layout/footer";
-@import "/sass/layout/forms";
-@import "/sass/layout/header";
-@import "/sass/layout/navigation";
-@import "/sass/layout/sidebar";
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
 
 
 //themes
-@import "/sass/themes/admin";
-@import "/sass/themes/theme";
+@import "themes/admin";
+@import "themes/theme";
 
 //vendors
-@import "/sass/vendors/bootstrap";
+@import "vendors/bootstrap";
