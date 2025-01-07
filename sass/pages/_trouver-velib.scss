@@ -1,24 +1,72 @@
 /****** trouver-velib.scss******/
+
+// set size window for PC
 .PC{
-  width:1920px ;
-  height: 1080px;
-  display: flex;
-  margin-top: 20%;
-  margin-bottom: 20%;
-  background:$nav-font-color;
+  width:100vw ;
+  height: 100vh;
+  //display: flex;
+  //margin-top: 2%;    // space for nav
+  //margin-bottom: 2%;  // space for footer
+  background:$main-background-color;
+  border: 3px solid rgb(43, 67, 226);  // color for check class
 }
 
-// setting contents in the middle inside container
-.tr_container{
+// setting container in middle
+.con_center{
+  display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid blueviolet;
+  width: 100%;
+  height: 70%;
+  border: 3px solid rgb(226, 43, 186);
 }
 
-// setting each conents in center
+// setting text in the middle inside container
+.tr_container{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border: 3px solid green;
+}
+
+.text_center{
+  text-align: center;
+}
+// setting counter box position row
 .con_row{
   display: flex;
   flex-direction: row;
   padding: 0 5px;
   border: 3px solid red;
 }
+
+
+
+H2{
+  font-family: "Monserrat Semi Bold";
+  font-size: x-large;
+}
+
+// about time counter
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add space between boxes */
+}
+
+.countdown-box {
+  background-color: $compteur-color;
+  color: $main-background-color;
+  font-size: 1.5em;
+  padding: 20px;
+  width: inherit; /* Adjust box size */
+  text-align: center;
+}
+
+.label {
+  font-size: 0.8em;
+  margin-top: 5px;
+  color: $main-background-color;
+}
+
