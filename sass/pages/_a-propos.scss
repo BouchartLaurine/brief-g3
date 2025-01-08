@@ -1,12 +1,85 @@
-
 /******a-propos *******/
 
+// setting container of slider
+.slider_container{
+  display: flex;
+  overflow: hidden; // hide over item
+  width: 100vw;
+}
+
+// propo main containtes size setting
 .pro_main{
   display: flex;
   justify-content: center;
-  align-content: left;
-  width: 100%;
-  height: 70%;
+  //align-content: left;
+  //width: 100%;
+  //height: 100%;
+  //padding-top: 20%;
   border: 3px solid rgb(226, 43, 186);
 }
 
+// setting page1 of % of contents
+.page1{
+  display: grid;
+  grid-template-columns: 40% 45% 15%;
+  border: 3px solid yellowgreen;
+}
+// setting page2 of % of contents
+.page2{
+  display: grid;
+  grid-template-columns: 10% 50% 40%;
+  border: 3px solid rgb(255, 153, 0);
+}
+
+// >,< font
+.iconChange{
+  color: $accent-color;
+  font-size: 60px;
+  font-weight: 1000;
+  align-items: center;
+  padding: 0 80px;
+}
+
+// 1st page image position
+.porpo1_img{
+  display: flex;
+  //justify-content: center;
+ align-items: center;
+  border: 3px solid rgb(255, 0, 76);
+}
+.green-box {
+  background: linear-gradient(to bottom right, $accent-color, $compteur-color);
+  width: 600px;
+  height : 200px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+// both pages text position
+.porpo_text{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: left;
+  padding :20px 50px;
+  border: 3px solid blue;
+
+    li{
+    color: $accent-color;
+  }
+
+}
+// both page icon change page position
+.changePage{
+  display: flex;
+  align-items: center;
+  border: 3px solid green;
+}
+
+.porpo2_img{
+display: flex;
+position-area: right;
+padding-right: -50px;
+padding-bottom: 2ch;
+border: 3px solid rgb(255, 166, 0);
+}

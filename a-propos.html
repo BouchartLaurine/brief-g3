@@ -16,9 +16,7 @@
   <body class="PC">
     <header>
       <nav class="navbar">
-        <a href="index.html" class="logo"
-          ><img src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""
-        /></a>
+        <a href="#" class="logo"><img class="logo-p" src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""></a>
         <div class="menu-toggle">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -34,8 +32,46 @@
         </ul>
       </nav>
     </header>
-    <main class="pro_main">
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.menu');
+  
+      menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+    </script>
 
+    <main class="pro_main">
+      <div class="slider_container">
+        <!--page1-->
+        <div class="page1">
+          <div class="porpo1_img">
+            <div>
+              <div class="green-box"></div>
+            </div>
+            <img src="ressources/co2WEB/co2WEB/feuille-etaler.svg" alt="feuilEtaler">
+          </div>
+          <div class="porpo_text" style="border: 2px solid blueviolet;">
+            <p>Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
+              Aenean egestas fermentum, at elementum ut ut eu, feugiat sit feugiat morbi id ipsum tincidunt </p>
+          </div>
+          <div class="changePage">
+            <p class="iconChange"> &gt; </p>
+          </div>
+        </div>
+
+        <!--page2-->
+        <!-- <div class="page2">
+          <div>
+            <p class="iconChange"> &lt; </p>
+          </div>
+          <div></div>
+          <div></div>
+        </div>  -->
+
+
+      </div>
     </main>
     <footer>
       <nav>
