@@ -13,8 +13,8 @@
 
 .form-bg {
   border: 0px solid;
-  padding: 50px;
-  box-shadow: 1px 1px 20px;
+  padding: 5%;
+  box-shadow: 0.2rem 0.2rem 1rem;
   max-width: 50%;
   margin-top: 2%;
   margin-left: 25%;
@@ -22,7 +22,7 @@
   .form-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     gap: 5%;
 
     div {
@@ -30,8 +30,8 @@
 
       label {
         display: block;
-        margin-bottom: 5px;
-        font-size: 14px;
+        margin-bottom: 0.5em;
+        font-size: 100%;
         color: var(--font-color);
       }
     }
@@ -41,10 +41,10 @@
 .form-group input,   //Hauteur entre les lignes
   .form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 1%;
 
   border: none;
-  border-bottom: 1px solid #0303032c;
+  border-bottom: 0.1em solid #0303032c;
   .form-message {
     display: flex;
     flex-direction: column;
@@ -69,5 +69,7 @@
     url(/ressources/co2WEB/co2WEB/feuille2.svg);
   background-repeat: no-repeat;
   background-size: 50% 50%;
-  background-position: top left, bottom left, 0% 0%, 115% bottom;
+  background-position: top left, bottom left, 0% 0%, 75rem bottom;
 }
+
+// Responsive
