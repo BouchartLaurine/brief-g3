@@ -60,10 +60,14 @@
 .footer-margin {
   margin-top: 5%;
 }
+
 // Img background
 
 .main-block-contact {
-  background-image: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg);
+  background-image: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+    url(/ressources/co2WEB/co2WEB/feuille.svg), url(),
+    url(/ressources/co2WEB/co2WEB/feuille2.svg);
   background-repeat: no-repeat;
-  background-position: 10%;
+  background-size: 50% 50%;
+  background-position: top left, bottom left, 0% 0%, 115% bottom;
 }

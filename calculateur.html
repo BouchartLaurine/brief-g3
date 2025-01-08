@@ -1,17 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link -->
-    <link rel="stylesheet" href="/sass/pages/calculateur.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="/sass/main.css" />
+
+    <!-- Font -->
   </head>
-  <body></body>
+  <body>
+    <!-- Nav -->
+    <header class="header-contact">
+      <nav class="navbar">
+        <a href="index.html" class="logo"
+          ><img src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""
+        /></a>
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="mode-emplois.html">Mode d'emploi</a></li>
+          <li><a href="trouver-velib.html">Trouver un vélib</a></li>
+          <li><a href="calculateur.html">Calculateur</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Script nav mobile -->
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      });
+    </script>
+    <!-- End of Nav -->
+
+    <main class="main-block-cal">
+      <h1 class="title-cal">
+        Calculateur d'émissions de CO2 Trajets domicile / travail en voiture
+      </h1>
+      <div class="form-bg-cal">
+        <form>
+          <!-- Distance -->
+
+          <div class="form-group">
+            <div>
+              <label for="distance"
+                >Votre Distance parcourue par jour (en kilomètres) :</label
+              >
+              <br />
+              <input
+                type="text"
+                id="distance"
+                placeholder="www.exemple.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="nombre"
+                >Nombre de jours travaillés par semaine :</label
+              >
+              <br />
+              <input type="number" id="nombre" placeholder="Nombre" required />
+            </div>
+          </div>
+
+          <div class="submit-button-position-cal">
+            <button type="submit" class="submit-button">Commencer</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div>
+      <footer class="footer-margin">
+        <nav>
+          <ul class="footer-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="mode-emplois.html">Mode d'emploi</a></li>
+            <li><a href="trouver-velib.html">Trouver un vélib</a></li>
+            <li><a href="calculateur.html">Calculateur</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>
