@@ -66,22 +66,34 @@
 // Img background
 
 .contact-body {
-  background: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+  background: 
+  // Feuilles
+    url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
     url(/ressources/co2WEB/co2WEB/feuille.svg),
     url(/ressources/co2WEB/co2WEB/feuille2.svg),
-    //Cercle vert foncé
-    url(/ressources/co2WEB/co2WEB/cercle-vert-fonce.svg),
     // Cercle vert
     url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
     // Cercle vert claire
     url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
 
   background-repeat: no-repeat;
-  background-size: 30% 30%, 30% 30%, 30% 30%, 10%, 8%, 6%;
+  background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
   background-position: 14rem 15%, 14rem 75%, 87rem 70%,
     // cercles
-    98rem 25%,
-    110rem 20%, 111rem 40%;
+    109rem 15%,
+    110rem 35%;
 }
 
+.cercle-vert-fonce {
+  position: absolute; /* Positionnement absolu du cercle */
+  top: 20%; /* Ajuste la position verticale du cercle */
+  left: 85%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Centrer l'image du cercle */
+  z-index: 10; /* Fait passer le cercle au-dessus du formulaire */
+}
 // Responsive
+
+// @media (refaire les tailles )
+
+@media (max-width: 360px) {
+}
