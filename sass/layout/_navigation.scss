@@ -99,7 +99,22 @@ header {
   .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-  .close-btn {
-    color: aqua;
+  
+  .menu-toggale .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: aqua;
+    color: red;
+    transition: background-color 0.3s ease;
   }
+
+  .menu-toggale.active .bar {
+    background-color: red;
+  }
+  .menu-toggale:hover .bar {
+    background-color: red;
+    color: red;
+  }
+
 }

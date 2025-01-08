@@ -35,6 +35,8 @@
     menuToggle.addEventListener('click', () => {
       menu.classList.toggle('active');
       menuToggle.classList.toggle('active');
+
+      menuToggle.addEventListener('click', () => { menuToggle.classList.toggle('active'); });
     });
   </script>
 
@@ -43,11 +45,12 @@
     <div class="container-principal">
       <div class="text-left">
         <div class="main-text">
-          <h1>Roulez vert à Marseille avec notre Vélib' zéro CO2</h1>
+          <h1 class="title-style">Roulez vert à Marseille<br> avec notre Vélib'<br> zéro CO2</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus sit amet luctus venenatis, lectus
+            Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Aliquam purus sit amet luctus venenatis,<br>
+            lectus
             magna
-            fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.
+            fringilla urna, porttitor rhoncus dolor<br> purus non enim praesent elementum facilisis leo.
           </p>
         </div>
         <div class="button-group">
