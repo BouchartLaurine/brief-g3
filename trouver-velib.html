@@ -42,6 +42,15 @@
           </ul>
         </nav>
       </header>
+      <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+    
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+        });
+      </script>
     <!--End of Navigation-->
 
     <main class="con_center"><!--setting contentes center-->
@@ -90,9 +99,9 @@
             document.getElementById("minutes").textContent= minutes ;
             document.getElementById("seconds").textContent= seconds ;
           }  
-          
           showDate();
           setInterval(shouDate, 1000); // update by 1seconds
+
         </script>
       
         <!--coming soon-->
@@ -102,7 +111,7 @@
         <div class="text_center">
           <p>La fonctionnalité de rechercher de vélib <br>
               ets en cours de développement. <br>
-              Elle arrivera le 1er septembre 2023
+              Elle arrivera le 1er septembre 2025
           </p>
         </div>
       </div>
