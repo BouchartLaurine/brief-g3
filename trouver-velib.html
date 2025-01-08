@@ -24,10 +24,8 @@
     <div class="PC">
       <header>
         <nav class="navbar">
-          <a href="index.html" class="logo"
-            ><img src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""
-          /></a>
-          <div class="menu">
+          <a href="#" class="logo"><img class="logo-p" src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""></a>
+          <div class="menu-toggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -82,10 +80,8 @@
 
           // start calclation of time
           function showDate() {
-          // set now
-            const now = new Date();
-          // Calculate of time different
-            const RestTime = OpenDate - now;
+            const now = new Date();           // set now
+            const RestTime = OpenDate - now; // Calculate of time different
 
           // setting each data to constants
             const days = Math.floor(RestTime / (1000 * 60 * 60 * 24));
@@ -100,7 +96,7 @@
             document.getElementById("seconds").textContent= seconds ;
           }  
           showDate();
-          setInterval(shouDate, 1000); // update by 1seconds
+          setInterval(showDate, 1000); // update by 1seconds
 
         </script>
       
