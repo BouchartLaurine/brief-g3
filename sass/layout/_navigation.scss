@@ -2,6 +2,7 @@
 header {
   background-color: #ffffff;
   border-bottom: 2px solid #dcdcdc;
+
 }
 
 .navbar {
@@ -24,14 +25,14 @@ header {
 
 .menu a {
   text-decoration: none;
-  font-size: 1rem;
-  color: #333333;
+  font-size: 1.2rem;
+  color: $nav-font-color;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .menu a:hover {
-  color: #4caf50;
+  color: $accent-color;
 }
 
 .menu-toggle {
@@ -47,6 +48,12 @@ header {
   width: 25px;
   margin: 4px 0;
   transition: 0.4s;
+}
+
+.logo-p {
+  width: 150px;
+  height: 100px;
+  padding-left: 70px;
 }
 
 @media (max-width: 768px) {

@@ -16,11 +16,11 @@ footer .footer-menu {
 
 footer .footer-menu li a {
   text-decoration: none;
-  color: #555;
-  font-size: 0.9rem;
+  color: $nav-font-color;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 footer .footer-menu li a:hover {
-  color: #2a9d8f;
+  color: $accent-color;
 }
