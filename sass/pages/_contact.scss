@@ -1,20 +1,12 @@
-/* Variables */
-:root {
-  --green: #019961;
-  --light-green: #85d653;
-}
-
 // Main
 
 .title-contact {
-  margin-left: 50%;
-}
-
-.main-block-contact {
   margin-top: 5%;
-  margin-left: 5%;
-  width: 100%;
-  height: 100%;
+  margin-left: 50%;
+  .main-block-contact {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
 }
 
 // Form
@@ -24,43 +16,54 @@
   padding: 50px;
   box-shadow: 1px 1px 20px;
   max-width: 50%;
+  margin-top: 2%;
   margin-left: 25%;
-}
+  background-color: white;
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 5%;
 
-.form-group {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  gap: 5%;
+    div {
+      flex: 1;
 
-  div {
-    flex: 1;
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 14px;
-      color: var(--font-color);
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: var(--font-color);
+      }
     }
   }
 }
 
 .form-group input,   //Hauteur entre les lignes
-.form-group textarea {
+  .form-group textarea {
   width: 100%;
   padding: 10px;
 
   border: none;
   border-bottom: 1px solid #0303032c;
-}
-
-.form-message {
-  display: flex;
-  flex-direction: column;
+  .form-message {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 // Button
 .submit-button-position {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.footer-margin {
+  margin-top: 5%;
+}
+// Img background
+
+.main-block-contact {
+  background-image: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg);
+  background-repeat: no-repeat;
+  background-position: 10%;
 }
