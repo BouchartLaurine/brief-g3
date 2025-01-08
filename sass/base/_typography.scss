@@ -7,56 +7,5 @@ h1 {
   font-family: "Monserrat Semi Bold";
   font-size: inherit;
   
-}
-
-// Variables pour la typographie et les couleurs
-$font-primary: "Monserrat Semi Bold"; // Police principale
-$font-secondary: "Georgia, serif"; // Police secondaire (si besoin)
-
-$color-title: #333333; // Couleur des titres
-$color-text: #666666; // Couleur des paragraphes
-$color-highlight: #007bff; // Couleur d'accentuation
-
-// Variables pour les espacements et tailles
-$spacing-small: 0.5rem;
-$spacing-medium: 1rem;
-$spacing-large: 1.5rem;
-
-$font-size-base: 1rem; // Taille de base des paragraphes
-$line-height-base: 1.5; // Hauteur de ligne de base
-
-// Mixin pour les titres
-@mixin title-style(
-  $size: 2rem,
-  $weight: bold,
-  $line-height: 1.2,
-  $color: $color-title
-) {
-  font-family: $font-primary;
-  font-size: $size;
-  font-weight: $weight;
-  line-height: $line-height;
-  color: $color;
-  margin: 0;
-}
-
-// Mixin pour les paragraphes
-@mixin paragraph-style(
-  $size: $font-size-base,
-  $line-height: $line-height-base,
-  $color: $color-text
-) {
-  font-family: $font-primary;
-  font-size: $size;
-  line-height: $line-height;
-  color: $color;
-  margin: 0 0 $spacing-large 0; // Ajout d'une marge basse
-}
-
-// Mixin pour la responsivité
-@mixin responsive-text($size, $size-mobile) {
-  font-size: $size;
-  @media (max-width: 768px) {
-    font-size: $size-mobile;
-  }
+  
 }
