@@ -1,0 +1,67 @@
+// Main
+.title-cal {
+  text-align: center;
+}
+
+// Form
+
+.form-bg-cal {
+  border: 0px solid;
+  padding: 50px;
+  box-shadow: 1px 1px 20px;
+  max-width: 50%;
+  margin-top: 2%;
+  margin-left: 25%;
+  background-color: white;
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    div {
+      flex: 1;
+      margin-top: 5%;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: var(--font-color);
+      }
+    }
+  }
+}
+
+.form-group input,   //Hauteur entre les lignes
+  .form-group textarea {
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  border-bottom: 1px solid #0303032c;
+  .form-message {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Button
+.submit-button-position-cal {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-margin {
+  margin-top: 5%;
+}
+
+// Img background
+.main-block-cal {
+  background-image: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+    url(/ressources/co2WEB/co2WEB/feuille.svg), url(),
+    url(/ressources/co2WEB/co2WEB/feuille2.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: top left, bottom left, 0% 0%, 115% bottom;
+}
