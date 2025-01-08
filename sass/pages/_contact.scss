@@ -3,10 +3,11 @@
 .title-contact {
   margin-top: 5%;
   margin-left: 50%;
-  .main-block-contact {
-    margin-top: 5%;
-    margin-left: 5%;
-  }
+}
+
+.main-block-contact {
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 // Form
@@ -19,36 +20,37 @@
   margin-top: 2%;
   margin-left: 25%;
   background-color: white;
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5%;
-    gap: 5%;
-
-    div {
-      flex: 1;
-
-      label {
-        display: block;
-        margin-bottom: 0.5em;
-        font-size: 100%;
-        color: var(--font-color);
-      }
-    }
-  }
 }
 
-.form-group input,   //Hauteur entre les lignes
-  .form-group textarea {
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  gap: 5%;
+}
+
+.form-group div {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 100%;
+  color: var(--font-color);
+}
+
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 1%;
-
   border: none;
   border-bottom: 0.1em solid #0303032c;
-  .form-message {
-    display: flex;
-    flex-direction: column;
-  }
+}
+
+.form-message {
+  display: flex;
+  flex-direction: column;
 }
 
 // Button
@@ -63,13 +65,23 @@
 
 // Img background
 
-.main-block-contact {
-  background-image: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
-    url(/ressources/co2WEB/co2WEB/feuille.svg), url(),
-    url(/ressources/co2WEB/co2WEB/feuille2.svg);
+.contact-body {
+  background: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+    url(/ressources/co2WEB/co2WEB/feuille.svg),
+    url(/ressources/co2WEB/co2WEB/feuille2.svg),
+    //Cercle vert foncé
+    url(/ressources/co2WEB/co2WEB/cercle-vert-fonce.svg),
+    // Cercle vert
+    url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+    // Cercle vert claire
+    url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+
   background-repeat: no-repeat;
-  background-size: 50% 50%;
-  background-position: top left, bottom left, 0% 0%, 75rem bottom;
+  background-size: 30% 30%, 30% 30%, 30% 30%, 10%, 8%, 6%;
+  background-position: 14rem 15%, 14rem 75%, 87rem 70%,
+    // cercles
+    98rem 25%,
+    110rem 20%, 111rem 40%;
 }
 
 // Responsive
