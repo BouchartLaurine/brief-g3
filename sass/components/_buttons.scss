@@ -19,9 +19,9 @@
 
 .button-plus{
   background: none;
-  color: #2a9d8f;
+  color: $accent-color;
   padding: 0.8rem 1.5rem;
-  border: 2px solid #2a9d8f;
+  border: 2px solid $accent-color;
   border-radius: 25px;
   cursor: pointer;
   font-size: 1rem;
