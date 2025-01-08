@@ -9,8 +9,8 @@ h1 {
 }
 
 // Variables pour la typographie et les couleurs
-$font-primary: 'Monserrat Semi Bold'; // Police principale
-$font-secondary: 'Georgia, serif'; // Police secondaire (si besoin)
+$font-primary: "Monserrat Semi Bold"; // Police principale
+$font-secondary: "Georgia, serif"; // Police secondaire (si besoin)
 
 $color-title: #333333; // Couleur des titres
 $color-text: #666666; // Couleur des paragraphes
@@ -25,7 +25,12 @@ $font-size-base: 1rem; // Taille de base des paragraphes
 $line-height-base: 1.5; // Hauteur de ligne de base
 
 // Mixin pour les titres
-@mixin title-style($size: 2rem, $weight: bold, $line-height: 1.2, $color: $color-title) {
+@mixin title-style(
+  $size: 2rem,
+  $weight: bold,
+  $line-height: 1.2,
+  $color: $color-title
+) {
   font-family: $font-primary;
   font-size: $size;
   font-weight: $weight;
@@ -35,7 +40,11 @@ $line-height-base: 1.5; // Hauteur de ligne de base
 }
 
 // Mixin pour les paragraphes
-@mixin paragraph-style($size: $font-size-base, $line-height: $line-height-base, $color: $color-text) {
+@mixin paragraph-style(
+  $size: $font-size-base,
+  $line-height: $line-height-base,
+  $color: $color-text
+) {
   font-family: $font-primary;
   font-size: $size;
   line-height: $line-height;
