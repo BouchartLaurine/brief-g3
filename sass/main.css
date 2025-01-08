@@ -3,6 +3,16 @@
 /* --------------------------------- DON'T TOUCH --------------------------------- */
 /* variable */
 /* Pages*/
+/******a-propos *******/
+.pro_main {
+  display: flex;
+  justify-content: center;
+  align-content: left;
+  width: 100%;
+  height: 70%;
+  border: 3px solid rgb(226, 43, 186);
+}
+
 .text-gauche {
   max-width: 500px;
   text-align: left;
@@ -166,18 +176,31 @@ button.plus:hover {
 
 /****** trouver-velib.scss******/
 .PC {
-  width: 1920px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  border: 3px solid rgb(43, 67, 226);
+}
+
+.con_center {
   display: flex;
-  margin-top: 20%;
-  margin-bottom: 20%;
-  background: #3DAD5C;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  border: 3px solid rgb(226, 43, 186);
 }
 
 .tr_container {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   align-items: center;
-  border: 3px solid blueviolet;
+  border: 3px solid green;
+}
+
+.text_center {
+  text-align: center;
 }
 
 .con_row {
@@ -185,6 +208,32 @@ button.plus:hover {
   flex-direction: row;
   padding: 0 5px;
   border: 3px solid red;
+}
+
+H2 {
+  font-family: "Monserrat Semi Bold";
+  font-size: x-large;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add space between boxes */
+}
+
+.countdown-box {
+  background-color: #019961;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 20px;
+  width: inherit; /* Adjust box size */
+  text-align: center;
+}
+
+.label {
+  font-size: 0.8em;
+  margin-top: 5px;
+  color: #ffffff;
 }
 
 p {
