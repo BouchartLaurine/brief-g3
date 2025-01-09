@@ -1,6 +1,7 @@
 /* --------------------------------- Navigation --------------------------------- */
 header {
   background-color: #ffffff;
+  padding: 10px 20px;
   border-bottom: 2px solid #dcdcdc;
 
 }
@@ -9,7 +10,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+}
+.logo img {
+  width: 100px;
 }
 
 .menu {
@@ -20,7 +23,8 @@ header {
 }
 
 .menu li {
-  margin-left: 20px;
+  margin-left: 15px;
+  margin: 0 15px;
 }
 
 .menu a {
