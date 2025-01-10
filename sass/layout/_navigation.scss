@@ -9,10 +9,14 @@ header {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 60px;
 }
 .logo img {
-  width: 100px;
+  width: 200px;
+  display: flex;
+  padding: 15px;
 }
 
 .menu {
@@ -54,11 +58,8 @@ header {
   transition: 0.4s;
 }
 
-.logo-p {
-  width: 150px;
-  height: 100px;
-  padding-left: 70px;
-}
+
+
 
 @media (max-width: 768px) {
   .menu {
@@ -72,6 +73,7 @@ header {
     background-color: #ffffff;
     z-index: 1000;
   }
+  
 
   .menu li {
     margin:20px;
@@ -88,6 +90,7 @@ header {
   .image img {
     width: auto;
     height: 300px;
+    
   }
 
   .main-text {
@@ -106,14 +109,20 @@ header {
 
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
 
   .menu-toggle {
     display: flex;
   }
 
-  .menu-toggle:hover {
-    color: red;
+  .menu-toggle .bar  {
+    background-color: $nav-font-color;
   }
+
 
   .menu.active {
     display: flex;
@@ -135,17 +144,6 @@ header {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: aqua;
-    color: red;
-    transition: background-color 0.3s ease;
-  }
-
-  .menu-toggale.active .bar {
-    background-color: red;
-  }
-  .menu-toggale:hover .bar {
-    background-color: red;
-    color: red;
   }
 
 }

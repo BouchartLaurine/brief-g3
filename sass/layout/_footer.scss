@@ -1,6 +1,5 @@
 /* Footer */
 footer {
-  background-color: #fff;
   padding: 3rem 0;
   border-top: 1px solid $Ligne-footer-color;
 }
@@ -23,4 +22,37 @@ footer .footer-menu li a {
 
 footer .footer-menu li a:hover {
   color: $accent-color;
+}
+
+/* Responsive Design footer */
+@media (max-width: 768px) {
+  footer {
+    text-align: left;
+    padding: 1rem 0;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-menu li a {
+    font-size: 1rem;
+    color: #2a2a2a;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-menu li a {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 0.5rem 0;
+  }
 }
