@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .comment-marche {
   margin-left: 5%;
   font-size: larger;
@@ -50,8 +51,28 @@
 // Responsive
 
 @media (max-width: 360px) {
-  .room {
-    background-color: blue;
-    // overflow-x: auto;
+  .main-block-emplois {
+    overflow-x: auto;
+    // background-color: red;
+
+    .room {
+      gap: 10%;
+      // background-color: blue;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .analyse,
+  .use-calculateur,
+  .results-emplois {
+    min-width: 90%;
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .use-calculateur {
+    box-shadow: none;
   }
 }

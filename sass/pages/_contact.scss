@@ -2,12 +2,7 @@
 
 .title-contact {
   margin-top: 5%;
-  margin-left: 50%;
-}
-
-.main-block-contact {
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-left: 40%;
 }
 
 // Form
@@ -18,15 +13,14 @@
   box-shadow: 0.2rem 0.2rem 1rem;
   max-width: 50%;
   margin-top: 2%;
-  margin-left: 25%;
+  margin-left: 20%;
   background-color: white;
-}
-
-.form-group {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5%;
-  gap: 5%;
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    gap: 5%;
+  }
 }
 
 .form-group div {
@@ -58,9 +52,8 @@
   display: flex;
   flex-direction: row-reverse;
 }
-
-.footer-margin {
-  margin-top: 5%;
+.button-contact-resp {
+  display: none;
 }
 
 // Img background
@@ -78,22 +71,34 @@
 
   background-repeat: no-repeat;
   background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
-  background-position: 14rem 15%, 14rem 75%, 87rem 70%,
+  background-position: 5rem 15%, 5rem 75%, 80rem 70%,
     // cercles
-    109rem 15%,
-    110rem 35%;
+    104rem 15%,
+    105rem 35%;
+  .cercle-vert-fonce {
+    position: absolute; /* Positionnement absolu du cercle */
+    top: 20%; /* Ajuste la position verticale du cercle */
+    left: 80%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Centrer l'image du cercle */
+    z-index: 10; /* Fait passer le cercle au-dessus du formulaire */
+  }
 }
 
-.cercle-vert-fonce {
-  position: absolute; /* Positionnement absolu du cercle */
-  top: 20%; /* Ajuste la position verticale du cercle */
-  left: 85%; /* Centrer horizontalement */
-  transform: translateX(-50%); /* Centrer l'image du cercle */
-  z-index: 10; /* Fait passer le cercle au-dessus du formulaire */
-}
 // Responsive
 
 // Mobile
+
+@media (max-width: 360px) {
+  .contact-body {
+    background: none;
+    max-width: 100%;
+    .title-contact h1 {
+      font-family: "Monserrat Semi Bold", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+}
 
 @media (max-width: 360px) {
   .cercle-vert-fonce {
@@ -119,16 +124,17 @@
     margin-bottom: 20%;
     gap: 10%;
   }
-
-  // Button
-
-  .footer-margin {
-    margin-top: 5%;
-  }
 }
 
+/* En responsive, afficher "Envoyer" et masquer "Commencer" */
 @media (max-width: 360px) {
-  .contact-body {
-    background: none;
+  .button-contact {
+    display: none; /* Masque le texte "Commencer" */
+  }
+
+  .button-contact-resp {
+    display: inline; /* Affiche le texte "Envoyer" */
   }
 }
+
+// Réorganiser l'ordre du formulaire en responsive

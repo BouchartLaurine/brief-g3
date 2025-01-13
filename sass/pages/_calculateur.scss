@@ -60,10 +60,6 @@
   justify-content: center;
 }
 
-.footer-margin {
-  margin-top: 5%;
-}
-
 // Img background
 .body-cal {
   background: 
@@ -78,7 +74,7 @@
 
   background-repeat: no-repeat;
   background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
-  background-position: 12rem 35%, 12rem 75%, 80rem 74%,
+  background-position: 10rem 35%, 10rem 75%, 80rem 74%,
     // cercles
     102rem 27%,
     103rem 45%;
@@ -93,7 +89,7 @@
 }
 
 // Responsive
-
+// Mobile
 @media (max-width: 360px) {
   .cercle-vert-fonce-cal {
     display: none;
@@ -101,9 +97,27 @@
 }
 
 @media (max-width: 360px) {
+  .title-cal {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .title-cal-resp {
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-bg-cal {
+    // background-color: blue;
+    border-radius: 10%;
+    min-width: 15rem;
+  }
+}
+
+@media (max-width: 360px) {
   .main-block-cal {
-    .title-cal {
-      display: none;
-    }
+    max-width: 10%;
   }
 }
