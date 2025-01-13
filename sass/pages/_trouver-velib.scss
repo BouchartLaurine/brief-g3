@@ -15,6 +15,7 @@
   align-items: center;
   width: 100%;
   height: 70%;
+  font-size: 20px;
  // border: 3px solid rgb(226, 43, 186);
 }
 
@@ -29,6 +30,9 @@
 
 .text_center{
   text-align: center;
+  padding: 0;
+  margin: 0;
+ // border: 2px solid salmon;
 }
 // setting counter box position row
 .con_row{
@@ -40,9 +44,9 @@
 
 
 
-H2{
-  font-family: "Monserrat Semi Bold";
-  font-size: x-large;
+.Coming{
+  font-family:"Roboto regular", sans-serif;
+  font-size: 32px;
 }
 
 // about time counter
@@ -62,7 +66,7 @@ H2{
 }
 
 .label {
-  font-size: 0.8em;
+  font-size: 0.5em;
   margin-top: 5px;
   color: $main-background-color;
 }
