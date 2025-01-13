@@ -1,12 +1,10 @@
 // Main
-
 .title-contact {
   margin-top: 5%;
   margin-left: 40%;
 }
 
 // Form
-
 .form-bg {
   border: 0px solid;
   padding: 5%;
@@ -15,6 +13,7 @@
   margin-top: 2%;
   margin-left: 20%;
   background-color: white;
+
   .form-group {
     display: flex;
     justify-content: space-between;
@@ -23,23 +22,25 @@
   }
 }
 
-.form-group div {
-  flex: 1;
-}
+.form-group {
+  div {
+    flex: 1;
+  }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.5em;
-  font-size: 100%;
-  color: var(--font-color);
-}
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 100%;
+    color: var(--font-color);
+  }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 1%;
-  border: none;
-  border-bottom: 0.1em solid #0303032c;
+  input,
+  textarea {
+    width: 100%;
+    padding: 1%;
+    border: none;
+    border-bottom: 0.1em solid #0303032c;
+  }
 }
 
 .form-message {
@@ -52,15 +53,15 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
 .button-contact-resp {
   display: none;
 }
 
 // Img background
-
 .contact-body {
   background: 
-  // Feuilles
+    // Feuilles
     url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
     url(/ressources/co2WEB/co2WEB/feuille.svg),
     url(/ressources/co2WEB/co2WEB/feuille2.svg),
@@ -75,38 +76,35 @@
     // cercles
     104rem 15%,
     105rem 35%;
+
   .cercle-vert-fonce {
-    position: absolute; /* Positionnement absolu du cercle */
-    top: 20%; /* Ajuste la position verticale du cercle */
-    left: 80%; /* Centrer horizontalement */
-    transform: translateX(-50%); /* Centrer l'image du cercle */
-    z-index: 10; /* Fait passer le cercle au-dessus du formulaire */
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 10;
   }
 }
 
 // Responsive
 
 // Mobile
-
 @media (max-width: 360px) {
   .contact-body {
     background: none;
     max-width: 100%;
+
     .title-contact h1 {
       font-family: "Monserrat Semi Bold", sans-serif;
       font-weight: 600;
       font-size: 1rem;
     }
   }
-}
 
-@media (max-width: 360px) {
   .cercle-vert-fonce {
     display: none;
   }
-}
 
-@media (max-width: 360px) {
   .form-bg {
     border: 0px solid;
     box-shadow: 0.1rem 0.1rem 0.5rem;
@@ -114,27 +112,32 @@
     max-width: 100%;
     margin-right: 5%;
     margin-left: 5%;
-
     background-color: white;
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20%;
+      gap: 10%;
+    }
   }
 
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20%;
-    gap: 10%;
-  }
-}
-
-/* En responsive, afficher "Envoyer" et masquer "Commencer" */
-@media (max-width: 360px) {
+  // En responsive, afficher "Envoyer" et masquer "Commencer"
   .button-contact {
-    display: none; /* Masque le texte "Commencer" */
+    display: none;
   }
 
   .button-contact-resp {
-    display: inline; /* Affiche le texte "Envoyer" */
+    display: inline;
+  }
+
+  // Réorganiser l'ordre du formulaire en responsive
+  .form-group {
+    flex-direction: column;
+    margin-bottom: 20%;
+  }
+
+  .form-group div {
+    margin-top: 0;
   }
 }
-
-// Réorganiser l'ordre du formulaire en responsive

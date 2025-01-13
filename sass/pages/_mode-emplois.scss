@@ -1,5 +1,4 @@
 /* Main */
-
 .main-block-emplois {
   margin-top: 0%;
   display: flex;
@@ -10,6 +9,7 @@
   margin-left: 5%;
   font-size: larger;
 }
+
 .block-align-emp {
   display: flex;
   justify-content: space-between;
@@ -20,13 +20,12 @@
 
 /* Analyse */
 .analyse {
-  //background-color: red;
+  // background-color: red;
   max-width: 20%;
   text-align: center;
 }
 
 /* Calculateur */
-
 .use-calculateur {
   border: 0px solid;
   padding: 10px;
@@ -37,9 +36,7 @@
 }
 
 /* Résultats */
-
 .results-emplois {
-  // background-color: green;
   max-width: 20%;
   text-align: center;
 }
@@ -49,30 +46,45 @@
 }
 
 // Responsive
-
+// Mobile
 @media (max-width: 360px) {
   .main-block-emplois {
     overflow-x: auto;
-    // background-color: red;
 
     .room {
       gap: 10%;
-      // background-color: blue;
     }
   }
-}
 
-@media (max-width: 360px) {
   .analyse,
   .use-calculateur,
   .results-emplois {
     min-width: 90%;
     display: flex;
   }
-}
 
-@media (max-width: 360px) {
   .use-calculateur {
     box-shadow: none;
   }
 }
+
+// Tablette$
+
+@media (max-width: 768px) {
+  .main-block-emplois {
+    overflow-x: auto;
+  }
+
+  .analyse,
+  .use-calculateur,
+  .results-emplois {
+    min-width: 100%;
+    display: flex;
+  }
+
+  .use-calculateur {
+    box-shadow: none;
+  }
+}
+
+// Desktop ok, NoteBook ok ,
