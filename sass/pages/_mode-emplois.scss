@@ -1,7 +1,7 @@
 /* Main */
 
 .main-block-emplois {
-  margin-top: 5%;
+  margin-top: 0%;
   display: flex;
   justify-content: space-between;
 }
@@ -48,3 +48,11 @@
 }
 
 // Responsive
+
+@media (max-width: 360px) {
+  .analyse,
+  .use-calculateur,
+  .results-emplois {
+    background-color: blue;
+  }
+}

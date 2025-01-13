@@ -1,8 +1,11 @@
 // Main
 .title-cal {
   text-align: center;
+  margin-top: 5%;
 }
-
+.title-cal-resp {
+  display: none;
+}
 .p-cal {
   margin-top: 5%;
   text-align: center;
@@ -15,7 +18,7 @@
   padding: 50px;
   box-shadow: 1px 1px 20px;
   max-width: 50%;
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: 25%;
   background-color: white;
   .form-group {
@@ -62,13 +65,45 @@
 }
 
 // Img background
-.main-block-cal {
-  background-image: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
-    url(/ressources/co2WEB/co2WEB/feuille.svg), url(),
-    url(/ressources/co2WEB/co2WEB/feuille2.svg);
+.body-cal {
+  background: 
+  // Feuilles
+    url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+    url(/ressources/co2WEB/co2WEB/feuille.svg),
+    url(/ressources/co2WEB/co2WEB/feuille2.svg),
+    // Cercle vert
+    url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+    // Cercle vert claire
+    url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+
   background-repeat: no-repeat;
-  background-size: 50% 50%;
-  background-position: top left, bottom left, 0% 0%, 115% bottom;
+  background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
+  background-position: 12rem 35%, 12rem 75%, 80rem 74%,
+    // cercles
+    102rem 27%,
+    103rem 45%;
+}
+
+.cercle-vert-fonce-cal {
+  position: absolute; /* Positionnement absolu du cercle */
+  top: 30%; /* Ajuste la position verticale du cercle */
+  left: 80%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Centrer l'image du cercle */
+  z-index: 10; /* Fait passer le cercle au-dessus du formulaire */
 }
 
 // Responsive
+
+@media (max-width: 360px) {
+  .cercle-vert-fonce-cal {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-block-cal {
+    .title-cal {
+      display: none;
+    }
+  }
+}

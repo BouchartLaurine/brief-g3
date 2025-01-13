@@ -93,7 +93,42 @@
 }
 // Responsive
 
-// @media (refaire les tailles )
+// Mobile
 
 @media (max-width: 360px) {
+  .cercle-vert-fonce {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-bg {
+    border: 0px solid;
+    box-shadow: 0.1rem 0.1rem 0.5rem;
+    border-radius: 5%;
+    max-width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    background-color: white;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20%;
+    gap: 10%;
+  }
+
+  // Button
+
+  .footer-margin {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-body {
+    background: none;
+  }
 }
