@@ -50,9 +50,8 @@
 // Responsive
 
 @media (max-width: 360px) {
-  .analyse,
-  .use-calculateur,
-  .results-emplois {
+  .room {
     background-color: blue;
+    // overflow-x: auto;
   }
 }
