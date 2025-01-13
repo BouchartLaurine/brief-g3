@@ -1,5 +1,7 @@
 /* --------------------------------- Navigation --------------------------------- */
 header {
+ 
+  font-family: "Roboto regular", sans-serif;
   background-color: #ffffff;
   padding: 10px 20px;
   border-bottom: 2px solid #dcdcdc;
@@ -33,7 +35,7 @@ header {
 
 .menu a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: $nav-font-color;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -41,6 +43,7 @@ header {
 
 .menu a:hover {
   color: $accent-color;
+  text-decoration: underline;
 }
 
 .menu-toggle {
