@@ -1,10 +1,11 @@
 /******a-propos *******/
 
 
- // 1.container propos main containtes size setting
+ // container propos main containtes size setting
   .propo_main{
     position: relative;
     width: 100%; 
+    margin: -10px;
     overflow: hidden; // hide over 1page
     //border: 2px solid saddlebrown;
 
@@ -17,12 +18,12 @@
     }
   }
 
-// 2.setting container of slider 2pages
+// setting container of slider 2pages
 .slider_container{
   display: flex; 
   width: 200%;// two pages side by side
   box-sizing: border-box;
-  height: 1000px;
+  height: 950px;
   //border: 2px solid black;
 
 
@@ -40,9 +41,10 @@
     background: 
     url(/ressources/co2WEB/co2WEB/tente.svg);
     background-repeat:no-repeat;
-    background-size: 70% auto; // set size of image
+    background-size: 65% auto; // set size of image
     background-position: calc(100% + 150px) top; // set image position
     min-width: 100vw;
+    margin-right: -10px;
    // border: 3px solid rgb(255, 153, 0);
   }
 }
@@ -76,7 +78,7 @@
   padding: 0 80px;
   margin: 0 30px;
 }
-.page
+
 //setting width size space image
 .ConImag{
   width: 800px;
