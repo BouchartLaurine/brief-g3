@@ -1,7 +1,9 @@
 // Main
 .title-cal {
+  margin-left: 5%;
   text-align: center;
   margin-top: 2%;
+  font-size: 190%;
 }
 
 .title-cal-resp {
@@ -20,10 +22,11 @@
 
 .form-bg-cal {
   border: 0px solid;
-  padding: 50px;
-  box-shadow: 1px 1px 50px;
 
+  padding: 50px;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.1);
   border-radius: 5%;
+
   max-width: 50%;
   margin-top: 5%;
   margin-left: 25%;
@@ -85,16 +88,17 @@
     url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
 
   background-repeat: no-repeat;
-  background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
-  background-position: 11rem 30%, 11rem 95%, 80rem 90%,
+  background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
+  background-position: 11rem 30%, 11rem 90%, 80rem 85%,
     // cercles
-    102rem 27%,
-    103rem 45%;
+    102rem 15%,
+    103rem 35%;
 }
 
 .cercle-vert-fonce-cal {
   position: absolute;
-  top: 23%;
+  top: 20%;
+
   left: 80%;
   transform: translateX(-50%); // Centrer l'image du cercle
   z-index: 10; // Fait passer le cercle au-dessus du formulaire
