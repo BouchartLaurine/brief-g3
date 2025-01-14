@@ -1,32 +1,30 @@
 /******a-propos *******/
 
 
- // container propos main containtes size setting
+/* setting 1page's size in a propos*/
   .propo_main{
     position: relative;
     width: 100%; 
-    margin: -10px;
+    //margin: -10px;
     overflow: hidden; // hide over 1page
     //border: 2px solid saddlebrown;
 
+    /* setting footer : position fix and tansparent*/
     .footer{
       position: fixed;
       bottom: 0;
       width: 100%;
       background-color:rgba(255, 0, 0, 0); // set backgrond transparent
-      //z-index: 2;
     }
   }
 
-// setting container of slider 2pages
+/* setting container of slider 2pages*/
 .slider_container{
   display: flex; 
   width: 200%;// two pages side by side
   box-sizing: border-box;
   height: 950px;
   //border: 2px solid black;
-
-
 }
 // setting 1page of % of contents
 .page{
@@ -49,14 +47,20 @@
   }
 }
 
-.d-row{
-  display: flex;
-}
+
+
 .d-center{
   display: flex;
   align-items: center;
 }
 
+
+
+.greenBar{
+  border-top: 4px solid ;
+  width: 300px;
+  border-image:linear-gradient(to right, $accent-color, $compteur-color) 1 ;
+}
 
 // bull font
 .PointMark{
@@ -89,12 +93,24 @@
 .PorpoText{
   display: flex;
   flex-direction:column;  //set direction colum
-  justify-content: center;  // set content in center
   text-align: left;
   width: 700px;
   max-width: 100%;
-  padding :20px 50px;
+  padding :20px 20px 80px 30px;
   //border: 3px solid blue;
+}
+
+.d-row{
+  display: flex;
+  position: absolute;
+  top: 80px;
+}
+
+.textP{
+  width: 700px;
+  display: flex;
+  position: absolute;
+  top: 250px;
 }
 
 //setting width size space for changepage 
@@ -104,13 +120,14 @@
   display: flex;
   margin: 0 30px;
   align-items: center;
+  justify-items: center;
   //border: 3px solid green;
 }
 
 .green-box {
   position: relative;   // overlap leaf and display
   background: linear-gradient(to bottom right, $accent-color, $compteur-color);
-  top: 200px;
+  top: 250px;
   width: 700px;
   height : 300px;
   border-top-right-radius: 150px;
@@ -119,7 +136,7 @@
 
 .leaf-img{
   position: absolute;   // overlap multiple images
-  top: 70px;
+  top: 120px;
   left: 100px;
   width: 500px;
   height: 500px;

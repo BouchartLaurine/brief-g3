@@ -44,12 +44,13 @@
 
     <main>
       
+      <!--set apopos page size-->
       <section class="propo_main">
-   
+        <!--set 2 pages-->
         <div class="slider_container"> 
   
-          <!--page1-->               
-          <section class="page">
+          <!-- start page1 -->               
+          <section class="page"> 
             <div class="ConImag">
               <div>
                 <div class="green-box"></div>
@@ -64,12 +65,16 @@
                 <p class="PointMark">&bull;</p> 
                 <h1 class="d-center" >À propos du projet</h1>
               </div>
-              <p>Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
-              </p>
-
+              <div class="textP">
+                <div>
+                <p>Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
+                </p>
+                <div class="greenBar"></div>
                 <p  class="p_principal">
                   Aenean egestas fermentum, at elementum ut ut eu, feugiat sit feugiat morbi id ipsum tincidunt
                 </p>
+              </div>
+              </div>
             </div>
             <div class="changePage">
               <button class="Change" onclick="slide('next')" > &gt; </button>
@@ -87,16 +92,31 @@
                   <p class="PointMark">&bull;</p>
                   <h1 class="d-center">À propos du projet</h1>
                 </div>
-                  <p>Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
+                <div class="textP">
+                  <p class="p_principal">Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
                   </p>
-                
+                </div>
               </div>
               <div class="ConImag"></div>
             </div>
           </section>
           
           <!--call slid js file-->
-          <script src="/sass/pages/apropos.js"></script>
+          <script>
+            const slider_container = document.querySelectorAll(".page");
+            const translateAmount = 100;
+            let translate = 0;
+
+            slide = (direction) => {
+              direction === "next" ? translate -= translateAmount : translate += translateAmount
+
+              slider_container.forEach(
+                slider_container => (slider_container.style.transform = `translateX(${translate}%`)
+              )
+                
+              }
+
+          </script>
  
 
         </div>
