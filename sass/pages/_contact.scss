@@ -112,13 +112,13 @@
     max-width: 100%;
     margin-right: 5%;
     margin-left: 5%;
+
     background-color: white;
 
     .form-group {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20%;
-      gap: 10%;
     }
   }
 
@@ -141,3 +141,36 @@
     margin-top: 0;
   }
 }
+
+// NoteBook
+
+@media (max-width: 1366px) {
+  .contact-body {
+    background: 
+    // Feuilles
+      url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+      url(/ressources/co2WEB/co2WEB/feuille.svg),
+      url(/ressources/co2WEB/co2WEB/feuille2.svg),
+      // Cercle vert
+      url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+      // Cercle vert claire
+      url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+
+    background-repeat: no-repeat;
+    background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
+    background-position: 5rem 18%, 5rem 75%, 80rem 70%,
+      // cercles
+      75rem 15%,
+      75rem 30%;
+
+    .cercle-vert-fonce {
+      position: absolute;
+      top: 20%;
+      left: 80%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+  }
+}
+
+// Desktop ok,
