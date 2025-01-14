@@ -125,8 +125,8 @@
     <script>
       // Fonction pour effectuer le calcul d'émissions de CO2 par mois
       function calculerEmissions() {
-        const distance = parseFloat(document.getElementById("distance").value);
-        const jours = parseInt(document.getElementById("nombre").value);
+        const distance = parseFloat(document.getElementById("distance").value); // Distance par trajet en km
+        const jours = parseInt(document.getElementById("nombre").value); // Nombre de trajets par mois
 
         if (isNaN(distance) || isNaN(jours) || distance <= 0 || jours <= 0) {
           alert(
@@ -135,19 +135,21 @@
           return;
         }
 
-        // Calcul de l'émission de CO2 par semaine (en grammes)
+        // Calcul de l'émission de CO2 par trajet (en grammes)
         const co2ParKm = 120; // Hypothèse : 120g de CO2 par km
-        const emissionsParSemaine = distance * jours * co2ParKm;
+        const emissionsParMoisEnGrammes = distance * jours * co2ParKm * 4.33; // Multiplie par 4,33 pour obtenir une estimation mensuelle
 
-        // Calcul des émissions par mois (en multipliant par 4,33 semaines par mois)
-        const emissionsParMois = emissionsParSemaine * 4.33;
+        // Conversion des émissions en kilogrammes
+        const emissionsParMoisEnKg = emissionsParMoisEnGrammes / 1000; // Conversion en kg
 
         // Afficher le résultat dans la page
         const resultatDiv = document.getElementById("resultat-emissions");
-        resultatDiv.innerHTML = `Les émissions de CO2 pour les trajets domicile / travail en voiture sont de <strong>${emissionsParMois.toLocaleString()}</strong> kg par mois.`;
+        resultatDiv.innerHTML = `Les émissions de CO2 pour les trajets domicile / travail en voiture sont de <strong>${emissionsParMoisEnKg.toFixed(
+          2
+        )}</strong> kg par mois.`;
       }
 
-      // Ajouter un écouteur d'événement pour le bouton
+      // Ajouter un écouteur d'événement pour le bouton de soumission du formulaire
       const form = document.querySelector("form");
       form.addEventListener("submit", (event) => {
         event.preventDefault(); // Empêcher le formulaire de se soumettre et de recharger la page

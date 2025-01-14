@@ -22,7 +22,7 @@ CO2 WEB est une application web **dédiée à la réduction des émissions de CO
 
 ---
 
-# Design responsive :mobile_phone::computer:
+# Design responsive :mobile_phone: :computer:
 
 L'application est optimisée pour les dimensions suivantes :
 Mobile : 360x800
