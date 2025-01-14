@@ -126,6 +126,41 @@
     display: none;
   }
 }
+// Calculateur
+
+@media (max-width: 360px) {
+  .form-bg-cal {
+    padding: 20px;
+    max-width: 80%;
+    margin-left: 80%;
+    border-radius: 15px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+}
 
 // NoteBook
 
@@ -156,5 +191,3 @@
     z-index: 10; // Fait passer le cercle au-dessus du formulaire
   }
 }
-
-// Desktop ok,
