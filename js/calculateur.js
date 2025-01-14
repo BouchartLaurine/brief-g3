@@ -11,7 +11,7 @@ function calculerEmissions() {
   }
 
   // Calcul de l'émission de CO2 par semaine (en grammes)
-  const co2ParKm = 120; // Hypothèse : 120g de CO2 par km
+  const co2ParKm = 120; // 120g de CO2 par km
   const emissionsParSemaine = distance * jours * co2ParKm;
 
   // Calcul des émissions par mois (en multipliant par 4,33 semaines par mois)
@@ -19,5 +19,5 @@ function calculerEmissions() {
 
   // Afficher le résultat dans la page
   const resultatDiv = document.getElementById("resultat-emissions");
-  resultatDiv.innerHTML = `Vous émettez environ <strong>${emissionsParMois.toLocaleString()}</strong> g de CO2 par mois.`;
+  resultatDiv.innerHTML = `Vous émettez environ <strong>${emissionsParMois.toLocaleString()}</strong> kg de CO2 par mois.`;
 }
