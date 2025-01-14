@@ -1,12 +1,5 @@
 /****** trouver-velib.scss******/
 
-// set size window for PC
-.PC{
-  width:100vw ;
-  height: 100vh;
-  background:$main-background-color;
-  //border: 3px solid rgb(43, 67, 226);  // color for check class
-}
 
 // setting container in middle
 .con_center{
@@ -14,7 +7,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70%;
+  height: 100%;
   font-size: 20px;
  // border: 3px solid rgb(226, 43, 186);
 }
