@@ -78,7 +78,8 @@
 
   .button-group {
     flex-direction: column;
-    gap: 1rem;
+    text-align: center;
+    padding-left: none;
   }
 
   .button-group button {
