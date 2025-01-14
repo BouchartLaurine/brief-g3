@@ -1,84 +1,73 @@
-/* Footer */
-footer {
+/* Footer Style */
+.footer {
   font-family: "Roboto regular", sans-serif;
-  border-top: 1px solid $Ligne-footer-color;
-  text-align: center;
-  flex: 0 0 10vh; /* 10% de la hauteur de l'écran */
+  padding: 2rem 0;
+  border-top: 2px solid $Ligne-footer-color;
+}
 
 
- .footer-menu {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+
+.footer-menu ul {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  margin: 0;
-  padding-right: 30px;
-}
+  justify-content: right;
+  margin-right: 30px;
 }
 
-footer .footer-menu li a {
+.footer-menu ul li a {
   text-decoration: none;
-  font-size: 1.4rem;
   color: $nav-font-color;
+  font-weight: bold;
+  font-size: 1.4rem;
   transition: color 0.3s ease;
 }
 
-
-
-footer .footer-menu li a:hover {
+.footer-menu ul li a:hover {
   color: $accent-color;
   text-decoration: underline;
 }
-.copyrght {
+
+.footer-copy {
   display: none;
 }
 
-
-/* Responsive Design footer */
+/* Responsive Footer */
 @media (max-width: 768px) {
-  footer {
-    text-align: left;
-    padding-left: 30px;
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer-menu {
-    gap: 0.5rem;
-    padding: 0;
-    flex-wrap: wrap;
-    display: none;
-    justify-content: none;
-    width: 50%;
- 
-   
-
-  }
-
-  .footer-menu li a {
-    font-size: 1rem;
-    color: #2a2a2a;
-    text-decoration: none;
-  }
-  .copyrght {
-    font-family: "Roboto regular", sans-serif;
-    font-size: 1.5rem;
+  .footer-menu ul {
+    padding: 5px;
+    gap: 1.5rem;
     display: flex;
-    line-height: 1.1em;
-    
-
+    justify-content: left;
+    padding-left: 30px;
+    width: 70%;
   }
-  
-  
-  
-  
+
+
+  .footer-copy {
+    font-family: "Monserrat Semi Bold", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    padding-left: 30px;
+    text-align: left;
+    margin-top: -40px;
+  }
 }
 
 @media (max-width: 480px) {
-  .footer-menu li a {
-    font-size: 0.9rem;
+  .footer-menu ul li a {
+    font-size: 0.875rem;
   }
 
-  footer {
-    padding: 0.5rem 0;
+  .footer-copy {
+    font-size: 0.75rem;
   }
 }
