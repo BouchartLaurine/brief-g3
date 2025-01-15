@@ -1,17 +1,6 @@
 .header-emplois {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    .logo {
-      img {
-        height: 40px;
-      }
-    }
+  .logo img {
+    height: 40px;
 
     .menu-toggle {
       display: none;
@@ -197,46 +186,6 @@
 
         &.active {
           background-color: #717171;
-        }
-      }
-    }
-  }
-}
-
-// Styles pour le pied de page
-.footer-margin {
-  background-color: #f4f4f4;
-  padding: 10px 0;
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .footer-copy {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    .footer-menu {
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        li {
-          margin: 0 10px;
-
-          a {
-            text-decoration: none;
-            color: #333;
-            font-size: 0.9em;
-          }
         }
       }
     }
