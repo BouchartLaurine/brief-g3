@@ -41,6 +41,10 @@
     align-items: center;
   }
 
+  .footer-menu {
+    line-height: 0.5;
+  }
+
   .footer-menu ul {
     padding: 5px;
     gap: 1.5rem;
@@ -53,12 +57,15 @@
 
   .footer-copy {
     font-family: "Monserrat Semi Bold", sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
     display: flex;
-    padding-left: 30px;
-    text-align: left;
-    margin-top: -40px;
+
+  }
+
+  .footer-copy h3 {
+    font-size: 1.2rem;
+    margin-left: 25px;
+  
+
   }
 }
 
