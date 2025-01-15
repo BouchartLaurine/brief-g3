@@ -113,82 +113,24 @@
   .cercle-vert-fonce-cal {
     display: none;
   }
-
   .title-cal {
     display: none;
   }
-
-  .title-cal-resp {
-    display: block;
-    font-size: 2rem;
-    margin-left: 80%;
-  }
-
-  .form-bg-cal {
-    border-radius: 10%;
-    min-width: 15rem;
-  }
-
-  .main-block-cal {
-    max-width: 10%;
-  }
-
   .distance-resp {
     display: inline;
   }
-
   .votre-distance {
     display: none;
   }
-
   .p-cal {
     font-size: small;
     line-height: 120%;
   }
-
-  /* Afficher le texte uniquement en responsive (pour les petits écrans) */
-  .button-cal-resp {
-    display: inline; // Affiche le texte en version mobile
-  }
-
   .button-cal {
-    display: none; // Masque le texte "Commencer" en version mobile
-  }
-
-  .form-bg-cal {
-    padding: 20px;
-    max-width: 80%;
-
-    margin-left: 80%;
-    border-radius: 15px;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-    border-radius: 8px;
-  }
-
-  .submit-button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #45a049;
-    }
+    display: none;
   }
   .body-cal {
-    background: none !important; // Retirer les images de fond
+    background: none !important;
   }
   .nombre-jour-resp {
     display: inline;
