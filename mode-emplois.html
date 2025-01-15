@@ -4,22 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link -->
-    <link rel="stylesheet" href="/sass/pages/_mode-emplois.scss" />
     <link rel="stylesheet" href="/sass/main.css" />
-
     <!-- End of link -->
     <title>Mode d'emplois</title>
   </head>
   <body>
     <!-- Nav -->
-
     <header class="header-emplois">
       <nav class="navbar">
-        <a href="index.html" class="logo"
-          ><img
+        <a href="index.html" class="logo">
+          <img
             src="ressources/co2WEB/co2WEB/Logo-co2-web.svg"
             alt="Logo Co2Web"
-        /></a>
+          />
+        </a>
         <div class="menu-toggle">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -45,69 +43,86 @@
         menuToggle.classList.toggle("active");
       });
     </script>
-
     <!-- End of Nav -->
 
     <main>
       <div class="comment-marche">
-        <h1>
-          Comment ça <br />
-          marche ?
-        </h1>
+        <h1>Comment ça marche ?</h1>
       </div>
       <div class="main-block-emplois">
-        <!-- Analyser -->
-        <div class="block-align-emp">
-          <div class="analyse">
-            <div class="room">
-              <img
-                src="/ressources/co2WEB/co2WEB/fichier.svg"
-                alt="logo fichier"
-              />
-              <h2>Analyser votre site</h2>
-              <br />
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
-                asperiores ab! Eos nihil sunt a quam sequi magnam, consectetur
-                animi quas dolores harum, est nulla.
-              </p>
+        <div class="slides">
+          <!-- Analyser -->
+          <div class="slide active">
+            <div class="block-align-emp">
+              <div class="analyse">
+                <div class="room">
+                  <img
+                    src="/ressources/co2WEB/co2WEB/fichier.svg"
+                    alt="logo fichier"
+                  />
+                  <h2>Analyser votre site</h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Saepe, asperiores ab! Eos nihil sunt a quam sequi magnam,
+                    consectetur animi quas dolores harum, est nulla.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Calculateur -->
-
-          <div class="use-calculateur">
-            <div class="room">
-              <img
-                src="/ressources/co2WEB/co2WEB/lumière.svg"
-                alt="Logo lumière"
-              />
-              <h2>Utiliser le calculateur magique</h2>
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                modi, harum vel saepe voluptatibus rerum rem dolores officiis
-                non illo eligendi, temporibus veritatis magnam iure repudiandae,
-                omnis maxime eveniet quis!
-              </p>
+          <div class="slide">
+            <div class="block-align-emp">
+              <div class="use-calculateur">
+                <div class="room">
+                  <img
+                    src="/ressources/co2WEB/co2WEB/lumière.svg"
+                    alt="Logo lumière"
+                  />
+                  <h2>Utiliser le calculateur magique</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                    modi, harum vel saepe voluptatibus rerum rem dolores
+                    officiis non illo eligendi, temporibus veritatis magnam iure
+                    repudiandae, omnis maxime eveniet quis!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Résultats -->
-          <div class="results-emplois">
-            <div class="room">
-              <img
-                src="/ressources/co2WEB/co2WEB/sac.svg"
-                alt="Logo fiches notes"
-              />
-              <h2>Obtenez les résultats</h2>
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda consectetur, vel quod incidunt saepe rem est dicta
-                provident laboriosam laudantium aliquam, quos a nemo! Quasi
-                consequatur libero sit aspernatur doloribus.
-              </p>
+          <div class="slide">
+            <div class="block-align-emp">
+              <div class="results-emplois">
+                <div class="room">
+                  <img
+                    src="/ressources/co2WEB/co2WEB/sac.svg"
+                    alt="Logo fiches notes"
+                  />
+                  <h2>Obtenez les résultats</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda consectetur, vel quod incidunt saepe rem est dicta
+                    provident laboriosam laudantium aliquam, quos a nemo! Quasi
+                    consequatur libero sit aspernatur doloribus.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="navigation">
+          <button class="nav-button prev" onclick="prevSlide()">
+            &#10094;
+          </button>
+          <div class="dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <button class="nav-button next" onclick="nextSlide()">
+            &#10095;
+          </button>
         </div>
       </div>
     </main>
@@ -115,9 +130,8 @@
     <div class="footer-margin">
       <footer class="footer">
         <div class="footer-copy">
-          <p>Copyright © 2022 CO2WEB.<br>Tous droits réservés.</p>
+          <p>Copyright © 2022 CO2WEB.<br />Tous droits réservés.</p>
         </div>
-    
         <div class="footer-menu">
           <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -128,8 +142,47 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        </div>
       </footer>
     </div>
+
+    <!-- Script for slides -->
+    <script>
+      let currentSlideIndex = 1;
+      showSlide(currentSlideIndex);
+
+      function showSlide(n) {
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          currentSlideIndex = 1;
+        }
+        if (n < 1) {
+          currentSlideIndex = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[currentSlideIndex - 1].classList.add("active");
+        dots[currentSlideIndex - 1].className += " active";
+      }
+
+      function nextSlide() {
+        currentSlideIndex++;
+        showSlide(currentSlideIndex);
+      }
+
+      function prevSlide() {
+        currentSlideIndex--;
+        showSlide(currentSlideIndex);
+      }
+
+      function currentSlide(n) {
+        currentSlideIndex = n;
+        showSlide(currentSlideIndex);
+      }
+    </script>
   </body>
 </html>

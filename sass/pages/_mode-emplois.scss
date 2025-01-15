@@ -1,90 +1,216 @@
-/* Main */
+// Importation des fichiers SCSS nécessaires
+@import "pages/_mode-emplois";
+@import "main";
+
+// Styles pour la navigation mobile
+.header-emplois {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .logo {
+      img {
+        height: 40px;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+
+      @media (max-width: 360px) {
+        display: flex;
+      }
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: #333;
+        transition: all 0.3s;
+      }
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @media (max-width: 360px) {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+        &.active {
+          display: flex;
+        }
+      }
+
+      li {
+        margin: 0 15px;
+
+        @media (max-width: 360px) {
+          margin: 10px 0;
+          text-align: center;
+        }
+
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// Styles pour le contenu principal
 .main-block-emplois {
-  margin-top: 0%;
-  display: flex;
-  justify-content: space-between;
-}
+  padding: 20px;
 
-.comment-marche {
-  margin-left: 5%;
-  font-size: larger;
-}
+  .comment-marche {
+    text-align: center;
+    margin-bottom: 20px;
 
-.block-align-emp {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-}
-
-/* Analyse */
-.analyse {
-  // background-color: red;
-  max-width: 20%;
-  text-align: center;
-}
-
-/* Calculateur */
-.use-calculateur {
-  border: 0px solid;
-  padding: 10px;
-  box-shadow: 1px 1px 20px;
-  background-color: rgb(255, 255, 255);
-  max-width: 20%;
-  text-align: center;
-}
-
-/* Résultats */
-.results-emplois {
-  max-width: 20%;
-  text-align: center;
-}
-
-.footer-margin {
-  margin-top: 5%;
-}
-
-// Responsive
-// Mobile
-@media (max-width: 360px) {
-  .main-block-emplois {
-    overflow-x: auto;
-
-    .room {
-      gap: 10%;
+    h1 {
+      font-size: 2em;
+      margin: 0;
     }
   }
 
-  .analyse,
-  .use-calculateur,
-  .results-emplois {
-    min-width: 90%;
+  .slides {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (max-width: 360px) {
+      flex-direction: column;
+      position: relative;
+    }
+
+    .slide {
+      flex: 1;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      @media (max-width: 360px) {
+        display: none;
+        flex: none;
+        margin: 0;
+        padding: 10px;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      .room {
+        text-align: center;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+
+        h2 {
+          font-size: 1.5em;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1em;
+          color: #666;
+        }
+      }
+    }
   }
 
-  .use-calculateur {
-    box-shadow: none;
+  .navigation {
+    display: none;
+
+    @media (max-width: 360px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .nav-button {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .dots {
+      display: flex;
+      margin: 0 10px;
+
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        cursor: pointer;
+
+        &.active {
+          background-color: #717171;
+        }
+      }
+    }
   }
 }
 
-// Tablette$
+// Styles pour le pied de page
+.footer-margin {
+  background-color: #f4f4f4;
+  padding: 10px 0;
 
-@media (max-width: 768px) {
-  .main-block-emplois {
-    overflow-x: auto;
-  }
-
-  .analyse,
-  .use-calculateur,
-  .results-emplois {
-    min-width: 100%;
+  .footer {
     display: flex;
-  }
+    flex-direction: column;
+    align-items: center;
 
-  .use-calculateur {
-    box-shadow: none;
+    .footer-copy {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .footer-menu {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          margin: 0 10px;
+
+          a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
   }
 }
-
-// Desktop ok, NoteBook ok ,
