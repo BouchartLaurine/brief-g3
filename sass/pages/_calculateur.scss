@@ -85,7 +85,7 @@
 
 // Img background
 .body-cal {
-  background: 
+  background:
     // Feuilles
     url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
     url(/ressources/co2WEB/co2WEB/feuille.svg),
@@ -110,18 +110,19 @@
   transform: translateX(-50%); // Centrer l'image du cercle
   z-index: 10; // Fait passer le cercle au-dessus du formulaire
 }
-
+// ....................................................
 // Responsive
-// Mobile
+// Mobile 360 x 800
 @media (max-width: 360px) {
   .cercle-vert-fonce-cal {
-    display: none;
+    display: none !important;
   }
   .title-cal {
     display: none;
   }
   .title-cal-resp {
     display: inline;
+    margin-left: 10%;
   }
   .votre-distance {
     display: none;
@@ -148,30 +149,35 @@
   .body-cal {
     background: none !important;
   }
+
   .main-block-cal {
-    margin-left: 10%;
+    margin-left: 0%;
     margin-right: 0%;
-    // background-color: red;
   }
 
   main.main-block-cal {
-    margin-left: 2%;
+    margin-left: 0%;
   }
 
   .form-bg-cal {
     margin-left: 1%;
     width: 25rem;
-    // background-color: pink;
+
     max-width: 15rem;
     max-height: 20rem;
   }
-}
 
+  div.form-bg-cal {
+    padding: 10%;
+    margin-left: 5%;
+  }
+}
+// ..................................................
 // Responsive Desktop 1920 x 1080
 
 @media (max-width: 1920px) {
   .body-cal {
-    background: 
+    background:
       // Feuilles
       url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
       url(/ressources/co2WEB/co2WEB/feuille.svg),
@@ -183,15 +189,15 @@
 
     background-repeat: no-repeat;
     background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
-    background-position: 11rem 30%, 11rem 79%, 80rem 74%,
+    background-position: 11rem 30%, 11rem 75%, 80rem 70%,
       // cercles
       102rem 15%,
       103rem 35%;
   }
 }
-
+// ...........................................
 // Responsive Tablette 768 x 1024
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .cercle-vert-fonce-cal {
     display: none;
   }
@@ -214,8 +220,85 @@
   }
 
   .body-cal {
-    background: none;
+    background:
+        // Feuilles
+      url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+      url(/ressources/co2WEB/co2WEB/feuille.svg),
+      url(/ressources/co2WEB/co2WEB/feuille2.svg),
+      // Cercle vert
+      url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+      // Cercle vert claire
+      url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+
+    background-repeat: no-repeat;
+    background-size: 20% 20%, 20% 20%, 30% 30%, 7%, 5%;
+    background-position: 5rem 19%, 8rem 68%, 37rem 65%,
+      // cercles
+      44rem 1005%,
+      44rem 3003%;
+  }
+  .cercle-vert-fonce-cal {
+    display: inline;
+    top: 18%;
+    left: 90%;
+
+    img {
+      max-width: 130%;
+      max-height: 130%;
+    }
   }
 }
-
+// ........................................................
 // Responsive NoteBook 1366 x 768
+
+@media (max-width: 1366px) {
+  .cercle-vert-fonce-cal {
+    display: none;
+  }
+  .title-cal {
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+  .p-cal {
+    font-size: small;
+    line-height: 140%;
+  }
+
+  /* Button */
+  .button-cal {
+    display: none;
+  }
+
+  .button-cal-resp {
+    display: inline;
+  }
+
+  .body-cal {
+    background:
+        // Feuilles
+      url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+      url(/ressources/co2WEB/co2WEB/feuille.svg),
+      url(/ressources/co2WEB/co2WEB/feuille2.svg),
+      // Cercle vert
+      url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+      // Cercle vert claire
+      url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+
+    background-repeat: no-repeat;
+    background-size: 20% 20%, 20% 20%, 20% 20%, 7%, 5%;
+    background-position: 13rem 25%, 13rem 68%, 60rem 65%,
+      // cercles
+      75rem 20%,
+      75rem 33%;
+  }
+  .cercle-vert-fonce-cal {
+    display: inline;
+    top: 23%;
+    left: 85%;
+
+    img {
+      max-width: 70%;
+      max-height: 13%;
+    }
+  }
+}
