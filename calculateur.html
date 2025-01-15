@@ -24,7 +24,11 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="mode-emplois.html">Mode d'emploi</a></li>
           <li><a href="trouver-velib.html">Trouver un vélib</a></li>
-          <li><a href="calculateur.html">Calculateur</a></li>
+          <li>
+            <a href="calculateur.html"
+              ><span class="active">Calculateur</span></a
+            >
+          </li>
           <li><a href="a-propos.html">À propos</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -72,8 +76,13 @@
             </div>
             <div>
               <label for="nombre"
-                >Nombre de jours travaillés par semaine :</label
-              >
+                ><span class="nombre-jour"
+                  >Nombre de jours travaillés par semaine :</span
+                >
+                <span class="nombre-jour-resp"
+                  >Nombre de jours travaillés / semaines :</span
+                >
+              </label>
               <br />
               <input type="number" id="nombre" placeholder="Nombre" required />
             </div>
@@ -96,9 +105,9 @@
     <div class="footer-margin">
       <footer class="footer">
         <div class="footer-copy">
-          <p>Copyright © 2022 CO2WEB.<br>Tous droits réservés.</p>
+          <p>Copyright © 2022 CO2WEB.<br />Tous droits réservés.</p>
         </div>
-    
+
         <div class="footer-menu">
           <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -108,7 +117,6 @@
             <li><a href="a-propos.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
         </div>
       </footer>
     </div>
@@ -122,7 +130,7 @@
         menuToggle.classList.toggle("active");
       });
     </script>
-    <!-- Calculateur -->
+    <!-- Script Calculateur -->
     <script>
       // Fonction pour effectuer le calcul d'émissions de CO2 par mois
       function calculerEmissions() {
