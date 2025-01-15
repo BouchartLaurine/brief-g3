@@ -10,6 +10,10 @@
   display: none;
 }
 
+.nombre-jour-resp {
+  display: none;
+}
+
 .p-cal {
   margin-top: 5%;
   text-align: center;
@@ -154,6 +158,7 @@
   .form-bg-cal {
     padding: 20px;
     max-width: 80%;
+
     margin-left: 80%;
     border-radius: 15px;
   }
@@ -184,5 +189,34 @@
   }
   .body-cal {
     background: none !important; // Retirer les images de fond
+  }
+  .nombre-jour-resp {
+    display: inline;
+  }
+  .nombre-jour {
+    display: none;
+  }
+}
+
+// Responsive Desktop 1920 x 1080
+
+@media (max-width: 1920px) {
+  .body-cal {
+    background: 
+      // Feuilles
+      url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+      url(/ressources/co2WEB/co2WEB/feuille.svg),
+      url(/ressources/co2WEB/co2WEB/feuille2.svg),
+      // Cercle vert
+      url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+      // Cercle vert claire
+      url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+
+    background-repeat: no-repeat;
+    background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
+    background-position: 11rem 30%, 11rem 79%, 80rem 74%,
+      // cercles
+      102rem 15%,
+      103rem 35%;
   }
 }
