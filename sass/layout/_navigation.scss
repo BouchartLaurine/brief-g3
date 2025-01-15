@@ -1,14 +1,15 @@
 /* --------------------------------- Navigation --------------------------------- */
 header {
- 
   font-family: "Roboto regular", sans-serif;
   background-color: #ffffff;
   padding: 10px 20px;
   border-bottom: 2px solid #dcdcdc;
   flex: 0 0 10vh; /* 10% de la hauteur de l'écran */
-
 }
-
+.active {
+  color: #019961;
+  font-weight: bold;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -62,9 +63,6 @@ header {
   transition: 0.4s;
 }
 
-
-
-
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -80,28 +78,23 @@ header {
 
   header {
     border-bottom: none;
-  
   }
 
-
-  
-
   .menu li {
-    margin:20px;
+    margin: 20px;
     text-align: center;
     padding: 15px;
     border-bottom: 2.2px solid $accent-color;
   }
 
-  .submit-button, .button-plus {
+  .submit-button,
+  .button-plus {
     width: 100%;
   }
-
 
   .image img {
     width: auto;
     height: 300px;
-    
   }
 
   .main-text {
@@ -114,10 +107,6 @@ header {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 18px;
-    
-
-
-
   }
 
   .navbar {
@@ -125,15 +114,13 @@ header {
     justify-content: space-between;
   }
 
-
   .menu-toggle {
     display: flex;
   }
 
-  .menu-toggle .bar  {
+  .menu-toggle .bar {
     background-color: $nav-font-color;
   }
-
 
   .menu.active {
     display: flex;
@@ -150,11 +137,10 @@ header {
   .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-  
+
   .menu-toggale .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
   }
-
 }

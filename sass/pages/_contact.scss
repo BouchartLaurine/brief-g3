@@ -3,6 +3,7 @@
   margin-top: 5%;
   margin-left: 40%;
 }
+
 .title-contact-resp {
   display: none;
 }
@@ -34,7 +35,6 @@
 
   label {
     display: block;
-    margin-bottom: 0.5em;
     font-size: 100%;
     color: var(--font-color);
   }
@@ -45,6 +45,7 @@
     padding: 1%;
     border: none;
     border-bottom: 0.1em solid #0303032c;
+    border-radius: 0%;
   }
 }
 
@@ -104,10 +105,10 @@
       font-weight: 600;
       font-size: 1.5rem;
       margin-left: 10%;
-
       display: inline;
     }
   }
+
   .title-contact {
     display: none;
   }
@@ -123,7 +124,6 @@
     max-width: 100%;
     margin-right: 5%;
     margin-left: 5%;
-
     background-color: white;
 
     .form-group {
@@ -142,75 +142,65 @@
     display: inline;
   }
 
-  // Réorganiser l'ordre du formulaire en responsive
-  .form-group {
-    flex-direction: column;
-    margin-bottom: 20%;
-  }
+  // NoteBook 1366 768
 
-  .form-group div {
-    margin-top: 0;
-  }
-}
-
-// NoteBook 1366 768
-
-@media (max-width: 1366px) {
-  .contact-body {
-    background:
+  @media (max-width: 1366px) {
+    .contact-body {
+      background:
     // Feuilles
-      url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
-      url(/ressources/co2WEB/co2WEB/feuille.svg),
-      url(/ressources/co2WEB/co2WEB/feuille2.svg),
-      // Cercle vert
-      url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
-      // Cercle vert claire
-      url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+        url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+        url(/ressources/co2WEB/co2WEB/feuille.svg),
+        url(/ressources/co2WEB/co2WEB/feuille2.svg),
+        // Cercle vert
+        url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+        // Cercle vert claire
+        url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
 
-    background-repeat: no-repeat;
-    background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
-    background-position: 5rem 30%, 5rem 105%, 80rem 70%,
-      // cercles
-      75rem 20%,
-      75rem 40%;
+      background-repeat: no-repeat;
+      background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
+      background-position: 5rem 30%, 5rem 105%, 80rem 70%,
+        // cercles
+        75rem 20%,
+        75rem 40%;
 
-    .cercle-vert-fonce {
-      position: absolute;
-      top: 20%;
-      left: 80%;
-      transform: translateX(-50%);
-      z-index: 10;
+      .cercle-vert-fonce {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
     }
   }
-}
 
-// Responsive Desktop 1920 x 1080
+  // Responsive Desktop 1920 x 1080
 
-@media (max-width: 1920px) {
-  .contact-body {
-    background:
+  @media (max-width: 1920px) {
+    .contact-body {
+      background:
     // Feuilles
-      url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
-      url(/ressources/co2WEB/co2WEB/feuille.svg),
-      url(/ressources/co2WEB/co2WEB/feuille2.svg),
-      // Cercle vert
-      url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
-      // Cercle vert claire
-      url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+        url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+        url(/ressources/co2WEB/co2WEB/feuille.svg),
+        url(/ressources/co2WEB/co2WEB/feuille2.svg),
+        // Cercle vert
+        url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+        // Cercle vert claire
+        url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
 
-    background-repeat: no-repeat;
-    background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
-    background-position: 5rem 25%, 5rem 85%, 80rem 80%,
-      // cercles
-      102rem 15%,
-      103rem 35%;
+      background-repeat: no-repeat;
+      background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
+      background-position: 5rem 25%, 5rem 85%, 80rem 80%,
+        // cercles
+        102rem 15%,
+        103rem 35%;
 
-    .cercle-vert-fonce {
-      position: absolute;
-      top: 20%;
-      left: 80%;
-      transform: translateX(-50%);
-      z-index: 10;
+      .cercle-vert-fonce {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
     }
   }
 }

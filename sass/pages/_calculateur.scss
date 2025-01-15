@@ -220,3 +220,33 @@
       103rem 35%;
   }
 }
+
+// Responsive Tablette 768 x 1024
+@media (max-width: 1024px) {
+  .cercle-vert-fonce-cal {
+    display: none;
+  }
+  .title-cal {
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+  .p-cal {
+    font-size: small;
+    line-height: 140%;
+  }
+
+  /* Button */
+  .button-cal {
+    display: none;
+  }
+
+  .button-cal-resp {
+    display: inline;
+  }
+
+  .body-cal {
+    background: none;
+  }
+}
+
+// Responsive NoteBook 1366 x 768
