@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   font-size: 20px;
-  border: 3px solid rgb(226, 43, 186);
+  //border: 3px solid rgb(226, 43, 186);
 }
 
 /* setting text in the middle inside container*/
@@ -20,7 +20,7 @@
   //border: 3px solid green;
 
   @media (max-width: 360px) {
-    padding: 50px;
+    padding: 60px;
   }
 }
 
@@ -36,7 +36,7 @@
   color: $main-background-color;
   font-size: 1.5em;
   font-family: $font-robo;
-  padding: 20px;
+  padding: 10px;
   width: inherit; /* Adjust box size */
   text-align: center;
 }
@@ -50,23 +50,20 @@
 
 .text_center{
   text-align: center;
-  padding: 0;
+  padding: 10px;
   margin: 0;
- // border: 2px solid salmon;
+  border: 2px solid salmon;
 }
-
-
-
 
 
 /* set font */
 .label {
-  font-size: 0.5em;
+  font-size: 0.4em;
   margin-top: 5px;
   color: $main-background-color;
 }
 .Coming{
-  font-family:"Roboto regular", sans-serif;
-  font-size: 32px;
+  font-family:$font-robo;
+  font-size: 38px;
 }
 
