@@ -16,7 +16,9 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="#" class="logo"><img class="logo-p" src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""></a>
+        <a href="index.html" class="logo"
+          ><img src="ressources/co2WEB/co2WEB/Logo-co2-web.svg" alt=""
+        /></a>
         <div class="menu-toggle">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -26,7 +28,8 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="mode-emplois.html">Mode d'emploi</a></li>
           <li><a href="trouver-velib.html">Trouver un vélib</a></li>
-          <li><a href="calculateur.html">Calculateur</a></li>
+          <li><a href="calculateur.html"
+            ><span class="active">Calculateur</span></a>  </li>
           <li><a href="a-propos.html">À propos</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -43,86 +46,83 @@
     </script>
 
     <main>
-      
       <!--set apopos page size-->
       <section class="propo_main">
-        <!--set 2 pages-->
+        
+        <!--set 2 pages inside container-->
         <div class="slider_container"> 
   
-          <!-- start page1 -->               
-          <section class="page"> 
-            <div class="ConImag">
-              <div>
-                <div class="green-box"></div>
-                <div>
+          <!-- start page1-->               
+          <section class="page">               
+            <!--setting first layer which page1 background -->       
+            <div class="page1_Back">
+              <div class="image1">
+                <div class="green-box">
                   <img  class="leaf-img" src="ressources/co2WEB/co2WEB/feuille-etaler.svg" alt="feuilEtaler">
                   <img class="display-img" src="ressources/co2WEB/co2WEB/ecrans.svg" alt="">
                 </div>
               </div>
-            </div>
-            <div class="PorpoText">
-              <div class="d-row">
-                <p class="PointMark">&bull;</p> 
-                <h1 class="d-center" >À propos du projet</h1>
-              </div>
-              <div class="textP">
-                <div>
-                <p>Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
-                </p>
-                <div class="greenBar"></div>
-                <p  class="p_principal">
-                  Aenean egestas fermentum, at elementum ut ut eu, feugiat sit feugiat morbi id ipsum tincidunt
-                </p>
-              </div>
+
+              <div class="changePage">
+                  <button class="Change" onclick="slide('next')" > &gt; </button>
               </div>
             </div>
-            <div class="changePage">
-              <button class="Change" onclick="slide('next')" > &gt; </button>
-            </div>
+                <div class="titelPropo_1">
+                    <li></li> 
+                    <h1>À propos du projet</h1> 
+                </div>
+          
+                  <div class="textPropos_1">
+                      <p>Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
+                      </p>  
+                      <div class="greenBar"></div>
+                      <p  class="p_principal">
+                        Aenean egestas fermentum, at elementum ut ut eu, feugiat sit feugiat morbi id ipsum tincidunt
+                      </p>
+                  </div>
+          
           </section>
         
           <!--page2-->
           <section class="page">
-            <div class="page2">
+            <div class="page2_Back">
               <div class="changePage">
                 <button class="Change" onclick="slide('prev')"> &lt; </button> <!--'<' -->
               </div>
-              <div class="PorpoText">
-                <div class="d-row">
-                  <p class="PointMark">&bull;</p>
-                  <h1 class="d-center">À propos du projet</h1>
+
+                <div class="titelPropo_2">
+                  <li></li> 
+                  <h1>À propos du projet</h1> 
                 </div>
-                <div class="textP">
+                <div class="textPropos_2">
                   <p class="p_principal">Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada tristique blandit elementum dapibus proin pretium rhoncus, viverra sagittis libero, libero varius accumsan ridiculus amet nam duis sit vestibulum nibh eget ultrices magna facilisis potenti
                   </p>
                 </div>
               </div>
-              <div class="ConImag"></div>
-            </div>
-          </section>
+        </section>
           
           <!--call slid js file-->
-        
+          <script src="js/apropos.js"></script>
 
+        <!--footer-->
+        <footer id="footer-about" class="footer">
+          <div class="footer-copy">
+            <p>Copyright © 2022 CO2WEB.<br>Tous droits réservés.</p>
+          </div>
+
+          <div class="footer-menu">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="mode-emplois.html">Mode d'emploi</a></li>
+              <li><a href="trouver-velib.html">Trouver un vélib</a></li>
+              <li><a href="calculateur.html">Calculateur</a></li>
+              <li><a href="a-propos.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </footer>
         </div>
-  <!--footer-->
-  <footer class="footer">
-    <div class="footer-copy">
-      <p>Copyright © 2022 CO2WEB.<br>Tous droits réservés.</p>
-    </div>
 
-    <div class="footer-menu">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="mode-emplois.html">Mode d'emploi</a></li>
-        <li><a href="trouver-velib.html">Trouver un vélib</a></li>
-        <li><a href="calculateur.html">Calculateur</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    </div>
-  </footer>
       </section>
     </main>
 
