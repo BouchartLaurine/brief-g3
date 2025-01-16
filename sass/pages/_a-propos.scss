@@ -34,7 +34,7 @@ transition: all 1s;
 //border: 3px solid red;
 
 /* setting page1 of background image*/
-.page1_Back{
+.page_1_Back{
 display: flex;
 min-width: 100%;
 //border: 5px solid olive;
@@ -47,7 +47,7 @@ min-width: 100%;
 }
 
 /* setting page2 of background image*/
-.page2_Back{
+.page_2_Back{
   display: flex;
   min-width: 100%;
   background: 
@@ -55,7 +55,7 @@ min-width: 100%;
   background-repeat:no-repeat;
   background-size: 68% auto; // set size of image
   background-position: calc(100% + 150px) calc(0px) ; // set image position
-  //border: 5px solid olive;
+  border: 5px solid olive;
 }
 li{
   color: $accent-color;
@@ -89,7 +89,6 @@ height : 300px;
 border-top-right-radius: 150px;
 border-bottom-right-radius: 150px;
 margin-right: 1000px;
-//border: 3px solid green;
 }
 /*image leaf*/
 .leaf-img{
@@ -111,42 +110,34 @@ height: 440px;
 }
 
 /*titel position setting for each page*/
-.titelPropo_1{
+.titelPropo{
   display: flex;
   position: absolute;
   top: 150px;
-  left: 900px;
-  //border: 3px solid rgb(255, 153, 0);
 }
-.titelPropo_2{
-  display: flex;
-  position: absolute;
-  top: 150px;
-  left: 300px;
-}
+  .titelPropo_1{
+    left: 900px;
+  }
+  .titelPropo_2{
+    left: 300px;
+  }
 
 
 /*text item position setting for each page*/
-.textPropos_1{
-width: 750px;
-display: flex;
-flex-direction: column;
-position: absolute;
-top: 300px;
-left: 900px;
-width: 650px;
-padding :0px 50px;
-}
-.textPropos_2{
-width: 750px;
-display: flex;
-flex-direction: column;
-position: absolute;
-top: 300px;
-left: 300px;
-width: 650px;
-padding :0px 50px;
-}
+.textPropos{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 300px;
+  width: 650px;
+  padding :0px 50px;
+  }
+  .textPropos_1{
+  left: 900px;
+  }
+  .textPropos_2{
+  left: 300px;
+  }
 
 /*undertext green bar*/
 .greenBar{
@@ -167,74 +158,100 @@ align-items: center;
 
 }
 
+/*start set media 1366px*/
+@media screen and (max-width: 1366px){
 
-
-
-@media screen and (max-width: 480px){
-
-.propo_main{
-  padding: 0;
-  margin: 0;
-// height: 800px;
-
- .footer{
-  background-color: #ffffff; // set backgrond transparent to white
+  /*green round box*/
+.green-box {
+  top: 150px;
+  width: 40%;
+  height : 300px;
   }
+  /*image leaf*/
+  .leaf-img{
+  left: 100px;
+  width: 400px;
+  }
+  /*imag ecran*/
+  .display-img{
+  left: 150px;
+  width: 380px;
+  }
+  /*titel position setting for each page*/
+.titelPropo{
+  display: flex;
+  position: absolute;
+  top: 50px;
+}
+  .titelPropo_1{
+    left: 600px;
+  }
+  .titelPropo_2{
+    left: 100px;
+  }
+/*text item position setting for each page*/
+.textPropos{
+  top: 180px;
+  width: 550px;
+  padding :0px 50px;
+  }
+  .textPropos_1{
+  left: 600px;
+  }
+  .textPropos_2{
+  left: 100px;
+  }
+  
+}
+
+/*start set media 768px*/
+@media screen and (max-width: 768px){
+  .footer{
+    background-color: #ffffff; // set backgrond transparent to white
+    }
+
+.titelPropo{
+  top: 120px;
+  padding-top: 0;
 }
 .titelPropo_1{
-  top: 10px;
-  left: 10px;
-  padding-top: 0;
-  //margin-bottom: 1000px; // put margin bottom with title
+  left:270px;
 }
 .titelPropo_2{
-  top: 10px;
-  left: 10px;
-  padding-top: 0;
+  left:100px;
 }
-
-.textPropos_1{
-  top: 180px;
+.textPropos{
   left: 10px;
-  width: 90%;
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0 20px;
+}
+.textPropos_1{
+  top: 250px;
+  width: 90%;
 }
 .textPropos_2{
-  top: 180px;
-  left: 10px;
-  width: 90%;
-  margin-top: 80px;
-  padding: 0 20px;
+  top: 130px; 
+  width: 40%;
+  padding-top:50px;
+  padding-left: 120px;
 }
-
 .greenBar{
-  width: 100px;
+  width: 200px;
 }
 
-.page{
-    min-height: 800px; //set height for 1page of mobile
-  
-  .page1_Back{
-    min-width: 360px;
-    height: 300px;
-    }
     .image1{
-      width: 70%;
+      width: 90%;
+      height: 40%;
     }
     .page2_Back{
-      background-size: 60% auto; // set size of image
-      background-position: calc(100% - 20px) calc(0px + 80px) ; // set image position 
-      min-width: 360px;
-      height: 300px;
-      //border: 5px solid olive;
+      background-size: 20% auto; // set size of image
+      background-position: calc(100%) calc(0px) ; // set image position 
     }
     //setting width size space for changepage 
   .changePage{  
     width: 50px;
-    height: 110%;
-    padding: 0;
-    margin: 0 30px;
+    height: 40%;
+    padding: 0 30px;
   }
       
   li{
@@ -247,37 +264,114 @@ align-items: center;
       height: 20px;
       padding:0 40px 10px 45px;
     }
-}
-
-
 /*green round box*/
 .green-box {
   top:120px;  
-  width: 70%;
-  height : 100px;
-  border-top-right-radius: 150px;
-  border-bottom-right-radius: 150px;
-  margin-right: 50px;
+  left :-40px;
+  width: 40%;
+  height : 150px;
 }
 /*image leaf*/
 .leaf-img{
-  position: absolute;   // overlap multiple images
-  top:-210px;
-  left: 20px;
-  width: 200px;
+  //position: absolute;   // overlap multiple images
+  top:-190px;
+  left: 60px;
+  width: 250px;
 }
 /*imag ecran*/
 .display-img{
   position: absolute; 
-  top:-140px;
-  left: 50px;
-  width: 150px;
+  top:-100px;
+  left: 80px;
+  width: 200px;
 }
 .Change{
   font-size: 30px;
   padding: 0 ;
   justify-content: center;
 }
-
-
 }
+/*end set media 768px */
+/*start set media 360px*/
+@media screen and (max-width: 360px){
+
+  .titelPropo{
+    top: 15px;
+    left: 10px;
+    padding-top: 0;
+  }
+  .textPropos{
+    top: 180px;
+    left: 10px;
+    width: 90%;
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+  .greenBar{
+    width: 100px;
+  }
+  
+  .page{
+      //min-height: 800px; //set height for 1page of mobile  
+    .page1_Back{
+      min-width: 360px;
+      height: 300px;
+      }
+      .image1{
+        width: 70%;
+      }
+      .page2_Back{
+        background-size: 200px; // set size of image
+        background-position: calc(100% + 150px) calc(0px) ; // set image position
+        min-width: 360px;
+        height: 20%;
+        border: 5px solid olive;
+      }
+      //setting width size space for changepage 
+    .changePage{  
+      width: 30px;
+      height: 35%;
+      //border: 5px solid olive;
+    }
+        
+    li{
+      list-style-type: none;
+      padding-left:0;
+      padding-top:0;
+      }
+  
+      h1{
+        height: 20px;
+        padding:0 40px 10px 45px;
+      }
+  }
+  /*green round box*/
+  .green-box {
+    top:120px;  
+    width: 70%;
+    height : 100px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    margin-right: 50px;
+  }
+  /*image leaf*/
+  .leaf-img{
+    position: absolute;   // overlap multiple images
+    top:-210px;
+    left: 20px;
+    width: 200px;
+  }
+  /*imag ecran*/
+  .display-img{
+    position: absolute; 
+    top:-140px;
+    left: 50px;
+    width: 150px;
+  }
+  .Change{
+    font-size: 30px;
+    padding: 0 ;
+    justify-content: center;
+  }
+  }
+  /*end set media 360px */
