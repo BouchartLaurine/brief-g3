@@ -170,16 +170,16 @@ align-items: center;
 
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 480px){
 
 .propo_main{
   padding: 0;
   margin: 0;
 // height: 800px;
 
-//   .footer{
-//  background-color: $main-background-color; // set backgrond transparent to white
-// }
+ .footer{
+  background-color: #ffffff; // set backgrond transparent to white
+  }
 }
 .titelPropo_1{
   top: 10px;
@@ -214,7 +214,7 @@ align-items: center;
 
 .page{
     min-height: 800px; //set height for 1page of mobile
-   // border: 5px solid orangered;
+  
   .page1_Back{
     min-width: 360px;
     height: 300px;
@@ -278,8 +278,6 @@ align-items: center;
   padding: 0 ;
   justify-content: center;
 }
-.PointMark{
-  list-style-type: none;
-}
+
 
 }
