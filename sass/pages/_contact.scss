@@ -4,6 +4,12 @@
   margin-left: 40%;
 }
 
+.main-block-cal {
+  .con_center {
+    flex-grow: 1; /* Permet au contenu de prendre l'espace restant */
+  }
+}
+
 .title-contact-resp {
   display: none;
 }
@@ -78,7 +84,7 @@
 
   background-repeat: no-repeat;
   background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
-  background-position: 5rem 25%, 5rem 95%, 80rem 90%,
+  background-position: 5rem 25%, 5rem 75%, 80rem 70%,
     // cercles
     102rem 15%,
     103rem 35%;
@@ -133,7 +139,6 @@
     }
   }
 
-  // En responsive, afficher "Envoyer" et masquer "Commencer"
   .button-contact {
     display: none;
   }
@@ -141,65 +146,88 @@
   .button-contact-resp {
     display: inline;
   }
-
-  // NoteBook 1366 768
-
-  @media (max-width: 1366px) {
-    .contact-body {
-      background:
-    // Feuilles
-        url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+  // Tablette 768 x 1024
+  @media (max-width: 768) {
+    /*
+     .contact-body {
+      background: url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
         url(/ressources/co2WEB/co2WEB/feuille.svg),
         url(/ressources/co2WEB/co2WEB/feuille2.svg),
-        // Cercle vert
         url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
-        // Cercle vert claire
         url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
 
       background-repeat: no-repeat;
-      background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
+      background-size: 20% 20%, 20% 20%, 20% 20%, 6%, 3%;
       background-position: 5rem 30%, 5rem 105%, 80rem 70%,
         // cercles
-        75rem 20%,
+        1rem 50%,
         75rem 40%;
+    }
+    .cercle-vert-fonce {
+      display: none !important;
+    }
+  } 
+    */
 
-      .cercle-vert-fonce {
-        position: absolute;
-        top: 20%;
-        left: 80%;
-        transform: translateX(-50%);
-        z-index: 10;
+    // NoteBook 1366 768
+
+    @media (max-width: 1366px) {
+      .contact-body {
+        background:
+    // Feuilles
+          url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+          url(/ressources/co2WEB/co2WEB/feuille.svg),
+          url(/ressources/co2WEB/co2WEB/feuille2.svg),
+          // Cercle vert
+          url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+          // Cercle vert claire
+          url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+
+        background-repeat: no-repeat;
+        background-size: 30% 30%, 30% 30%, 30% 30%, 8%, 6%;
+        background-position: 5rem 30%, 5rem 105%, 80rem 70%,
+          // cercles
+          1rem 50%,
+          75rem 40%;
+
+        .cercle-vert-fonce {
+          position: absolute;
+          top: 20%;
+          left: 80%;
+          transform: translateX(-50%);
+          z-index: 10;
+        }
       }
     }
-  }
 
-  // Responsive Desktop 1920 x 1080
+    // Responsive Desktop 1920 x 1080
 
-  @media (max-width: 1920px) {
-    .contact-body {
-      background:
+    @media (max-width: 1920px) {
+      .contact-body {
+        background:
     // Feuilles
-        url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
-        url(/ressources/co2WEB/co2WEB/feuille.svg),
-        url(/ressources/co2WEB/co2WEB/feuille2.svg),
-        // Cercle vert
-        url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
-        // Cercle vert claire
-        url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
+          url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
+          url(/ressources/co2WEB/co2WEB/feuille.svg),
+          url(/ressources/co2WEB/co2WEB/feuille2.svg),
+          // Cercle vert
+          url(/ressources/co2WEB/co2WEB/cercle-vert.svg),
+          // Cercle vert claire
+          url(/ressources/co2WEB/co2WEB/cercle-vert-clair.svg);
 
-      background-repeat: no-repeat;
-      background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
-      background-position: 5rem 25%, 5rem 85%, 80rem 80%,
-        // cercles
-        102rem 15%,
-        103rem 35%;
+        background-repeat: no-repeat;
+        background-size: 30% 30%, 30% 30%, 30% 30%, 7%, 5%;
+        background-position: 5rem 25%, 5rem 85%, 80rem 80%,
+          // cercles
+          102rem 15%,
+          103rem 35%;
 
-      .cercle-vert-fonce {
-        position: absolute;
-        top: 20%;
-        left: 80%;
-        transform: translateX(-50%);
-        z-index: 10;
+        .cercle-vert-fonce {
+          position: absolute;
+          top: 20%;
+          left: 80%;
+          transform: translateX(-50%);
+          z-index: 10;
+        }
       }
     }
   }
