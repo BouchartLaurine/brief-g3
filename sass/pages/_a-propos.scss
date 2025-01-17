@@ -1,6 +1,6 @@
 /******a-propos *******/
  // container propos main containtes size setting
- .propo_main{
+.propo_main{
   width: 100%; 
   margin: -20px -10px;
   overflow: hidden; // hide over 1page
@@ -10,8 +10,6 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    //background-color:rgba(255, 0, 0, 0); // set backgrond transparent
-    //z-index: 2;
   }
 }
 
@@ -21,11 +19,12 @@ display: flex;
 width: 200%;// two pages side by side
 box-sizing: border-box;
 height: 1000px;
+padding-top: 20px;
 //border: 2px solid black;
 }
 
 /* setting each page*/
-/* Page contains .page_Back,.ChangePage*/
+/* Page contains:page_Back,image,ChangePage*/
 .page{
 position: relative;
 min-width: 100vw;
@@ -33,30 +32,27 @@ display: flex;
 transition: all 1s; 
 //border: 3px solid red;
 
-/* setting page1 of background image*/
-.page_1_Back{
+/* setting page of background image and > */
+.page_1_Back{ 
 display: flex;
 min-width: 100%;
-//border: 5px solid olive;
+//border: 3px solid olive;
 }
-/* for image of 1st page*/
+/* for image of page1*/
 .image1{
   width: 90%;
   height: 100%;
-  //border: 7px solid green;
+  //border: 3px solid green;
+}
+/* for image of 2nd page*/
+.image2{
+  position: absolute;
+  top :-10px;
+  right : -250px;
+  width: 65% ; // set size of image
+  //border: 7px solid rgb(111, 0, 128);
 }
 
-/* setting page2 of background image*/
-.page_2_Back{
-  display: flex;
-  min-width: 100%;
-  background: 
-  url(/ressources/co2WEB/co2WEB/tente.svg);
-  background-repeat:no-repeat;
-  background-size: 68% auto; // set size of image
-  background-position: calc(100% + 150px) calc(0px) ; // set image position
-  border: 5px solid olive;
-}
 li{
   color: $accent-color;
   padding-top: 30px;
@@ -68,9 +64,9 @@ h1{
   color: $text-color;
 }
 }
+
 /*setting width size space for changePage*/ 
 .changePage{  
- // width: 10%;
   height: 80%;
   padding: 0 40px;
   margin: 0 10px;
@@ -78,9 +74,10 @@ h1{
   //border: 10px solid rgb(81, 0, 128); 
   }
 
+
 /*green round box*/
 .green-box {
-position: absolute;   // overlap leaf and display
+position: absolute;   position: absolute;   // overlap multiple images
 background: linear-gradient(to bottom right, $accent-color, $compteur-color);
 top: 300px;
 left: -10px;
@@ -109,7 +106,7 @@ height: 440px;
 // border: 3px solid #73AD21;
 }
 
-/*titel position setting for each page*/
+/*setting title text position*/
 .titelPropo{
   display: flex;
   position: absolute;
@@ -122,8 +119,7 @@ height: 440px;
     left: 300px;
   }
 
-
-/*text item position setting for each page*/
+/*setting phrases position*/
 .textPropos{
   display: flex;
   flex-direction: column;
@@ -158,15 +154,12 @@ align-items: center;
 
 }
 
-/*start set media 1366px*/
+/***start set media 1366px***/
 @media screen and (max-width: 1366px){
-
   /*green round box*/
-.green-box {
-  top: 150px;
-  width: 40%;
-  height : 300px;
-  }
+  .green-box {
+    top: 150px;
+    }
   /*image leaf*/
   .leaf-img{
   left: 100px;
@@ -177,10 +170,9 @@ align-items: center;
   left: 150px;
   width: 380px;
   }
+
   /*titel position setting for each page*/
 .titelPropo{
-  display: flex;
-  position: absolute;
   top: 50px;
 }
   .titelPropo_1{
@@ -202,24 +194,32 @@ align-items: center;
   left: 100px;
   }
   
-}
+  /*setting width size space for changePage*/ 
+.changePage{  
+  height: 60%;
+  }
 
-/*start set media 768px*/
+}
+/*** End set media 1366px ***/
+
+/*** Start set media 768px***/
 @media screen and (max-width: 768px){
   .footer{
+    margin-left: 10px;
     background-color: #ffffff; // set backgrond transparent to white
     }
-
+/*setting title text position*/
 .titelPropo{
-  top: 120px;
+  top: 160px;
   padding-top: 0;
 }
 .titelPropo_1{
-  left:270px;
+  left:240px;
 }
 .titelPropo_2{
-  left:100px;
+  left:55px;
 }
+/*setting phrases position*/
 .textPropos{
   left: 10px;
   margin-top: 70px;
@@ -227,7 +227,8 @@ align-items: center;
 }
 .textPropos_1{
   top: 250px;
-  width: 90%;
+  width: 80%;
+  padding-left: 50px;
 }
 .textPropos_2{
   top: 130px; 
@@ -235,19 +236,25 @@ align-items: center;
   padding-top:50px;
   padding-left: 120px;
 }
-.greenBar{
-  width: 200px;
-}
 
-    .image1{
-      width: 90%;
-      height: 40%;
-    }
-    .page2_Back{
-      background-size: 20% auto; // set size of image
-      background-position: calc(100%) calc(0px) ; // set image position 
-    }
-    //setting width size space for changepage 
+/*long of green bar*/
+  .greenBar{
+    width: 200px;
+  }
+/* each pages image position*/
+  .image1{
+  //  width: 90%;
+    height: 40%;
+  }
+  /* for image of 2nd page*/
+  .image2{
+    top: 120px;
+    left : 400px;
+  //  width: 65% ; // set size of image
+   // border: 7px solid rgb(111, 0, 128);
+  }
+    
+/*setting width size space for changepage */
   .changePage{  
     width: 50px;
     height: 40%;
@@ -264,11 +271,12 @@ align-items: center;
       height: 20px;
       padding:0 40px 10px 45px;
     }
+
 /*green round box*/
 .green-box {
   top:120px;  
-  left :-40px;
-  width: 40%;
+  left :-20px;
+  //width: 40%;
   height : 150px;
 }
 /*image leaf*/
@@ -291,10 +299,11 @@ align-items: center;
   justify-content: center;
 }
 }
-/*end set media 768px */
-/*start set media 360px*/
-@media screen and (max-width: 360px){
+/*** End set media 768px ***/
 
+/*** Start set media 360px***/
+@media screen and (max-width: 360px){
+/*text position setting for each page*/
   .titelPropo{
     top: 15px;
     left: 10px;
@@ -310,46 +319,42 @@ align-items: center;
   .greenBar{
     width: 100px;
   }
-  
-  .page{
-      //min-height: 800px; //set height for 1page of mobile  
-    .page1_Back{
-      min-width: 360px;
-      height: 300px;
-      }
-      .image1{
-        width: 70%;
-      }
-      .page2_Back{
-        background-size: 200px; // set size of image
-        background-position: calc(100% + 150px) calc(0px) ; // set image position
-        min-width: 360px;
-        height: 20%;
-        border: 5px solid olive;
-      }
-      //setting width size space for changepage 
-    .changePage{  
-      width: 30px;
-      height: 35%;
-      //border: 5px solid olive;
-    }
-        
-    li{
-      list-style-type: none;
-      padding-left:0;
-      padding-top:0;
-      }
-  
-      h1{
-        height: 20px;
-        padding:0 40px 10px 45px;
-      }
+
+/* setting page of background image*/
+  .page_1_Back{
+  min-width: 360px;
+  height: 300px;
+  //border: 5px solid orange;
   }
+  .image1{
+    width: 70%;
+  }
+  .image2{
+    position: absolute;
+    margin-top: 110px; 
+    left: 80px; 
+    width: 60%;
+    height : 160px;
+     //border: 5px solid olive;
+  }
+
+  //setting width size space for changepage 
+.changePage{  
+  width: 30px;
+  height: 100%;
+  //border: 5px solid olive;
+  }
+
+
+  h1{
+    padding:0 40px 10px 20px;
+   }
+
   /*green round box*/
   .green-box {
-    top:120px;  
-    width: 70%;
-    height : 100px;
+    top:100px;  
+    width: 80%;
+    height : 120px;
     border-top-right-radius: 150px;
     border-bottom-right-radius: 150px;
     margin-right: 50px;
@@ -357,21 +362,17 @@ align-items: center;
   /*image leaf*/
   .leaf-img{
     position: absolute;   // overlap multiple images
-    top:-210px;
-    left: 20px;
-    width: 200px;
+    top:-200px;
+    left: 50px;
+    width: 210px;
   }
   /*imag ecran*/
   .display-img{
     position: absolute; 
-    top:-140px;
-    left: 50px;
-    width: 150px;
+    top:-120px;
+    left: 70px;
+    width: 180px;
   }
-  .Change{
-    font-size: 30px;
-    padding: 0 ;
-    justify-content: center;
+
   }
-  }
-  /*end set media 360px */
+  /***end set media 360px ***/
