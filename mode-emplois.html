@@ -7,12 +7,14 @@
     <title>Mode d'emplois</title>
   </head>
   <body>
-    <header class="header-emplois">
+    <!--header-->
+    <header>
       <nav class="navbar">
         <a href="index.html" class="logo">
           <img
+            class="logo-p"
             src="ressources/co2WEB/co2WEB/Logo-co2-web.svg"
-            alt="Logo Co2Web"
+            alt=""
           />
         </a>
         <div class="menu-toggle">
@@ -31,6 +33,7 @@
       </nav>
     </header>
 
+    <!--javascript-pour-nav-->
     <script>
       const menuToggle = document.querySelector(".menu-toggle");
       const menu = document.querySelector(".menu");
@@ -41,7 +44,72 @@
       });
     </script>
 
-    <main>
+    <section class="web-section">
+      <div class="comment-marche">
+        <h1>Comment ça marche ?</h1>
+      </div>
+      <div class="main-block-emplois">
+        <div class="slides">
+          <div class="slide">
+            <div class="block-align-emp">
+              <div class="analyse">
+                <div class="room">
+                  <img
+                    src="/ressources/co2WEB/co2WEB/fichier.svg"
+                    alt="logo fichier"
+                  />
+                  <h2>Analyser votre site</h2>
+                  <p>
+                    Et id netus risus et sit id laoreet phasellus elit
+                    scelerisque dolor amet, euismod sed dignissim quam
+                    vestibulum risus at
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="block-align-emp">
+              <div class="use-calculateur">
+                <div class="room">
+                  <img
+                    src="/ressources/co2WEB/co2WEB/lumière.svg"
+                    alt="Logo lumière"
+                  />
+                  <h2>Utiliser le calculateur magique</h2>
+                  <p>
+                    Et id netus risus et sit id laoreet phasellus elit
+                    scelerisque dolor amet, euismod sed dignissim quam
+                    vestibulum risus at
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="block-align-emp">
+              <div class="results-emplois">
+                <div class="room">
+                  <img
+                    src="/ressources/co2WEB/co2WEB/sac.svg"
+                    alt="Logo fiches notes"
+                  />
+                  <h2>Obtenez les résultats</h2>
+                  <p>
+                    Posuere nisi ullamcorper sed voluptat eras dignissim a leo
+                    lacus ut lectus mauris id consequat mattis interdum vivra
+                    eros amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section for Responsive Version -->
+    <section class="responsive-section">
       <div class="comment-marche">
         <h1>Comment ça marche ?</h1>
       </div>
@@ -103,20 +171,20 @@
           </div>
         </div>
         <div class="navigation">
-          <button class="nav-button prev" onclick="prevSlide()">
+          <button class="nav-button-prev" onclick="prevSlide()">
             &#10094;
           </button>
-          <div class="dots">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          <button class="nav-button next" onclick="nextSlide()">
+          <button class="nav-button-next" onclick="nextSlide()">
             &#10095;
           </button>
         </div>
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
-    </main>
+    </section>
 
     <div class="footer-margin">
       <footer class="footer">
@@ -141,8 +209,8 @@
       showSlide(currentSlideIndex);
 
       function showSlide(n) {
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
+        let slides = document.querySelectorAll(".responsive-section .slide");
+        let dots = document.querySelectorAll(".responsive-section .dot");
         if (n > slides.length) {
           currentSlideIndex = 1;
         }

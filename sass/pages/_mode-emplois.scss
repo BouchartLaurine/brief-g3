@@ -1,193 +1,108 @@
-.header-emplois {
-  .logo img {
-    height: 40px;
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-
-      @media (max-width: 768px) {
-        display: flex;
-      }
-
-      .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        background-color: #333;
-        transition: all 0.3s;
-      }
-    }
-
-    .menu {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      @media (max-width: 768px) {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-
-        &.active {
-          display: flex;
-        }
-      }
-
-      li {
-        margin: 0 15px;
-
-        @media (max-width: 768px) {
-          margin: 10px 0;
-          text-align: center;
-        }
-
-        a {
-          text-decoration: none;
-          color: #333;
-          font-weight: bold;
-        }
-      }
-    }
-  }
+/* Main Content Styles for Responsive Version */
+.responsive-section {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: 8px; /*
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Masquée par défaut */
 }
 
-// Styles pour le contenu principal
-.main-block-emplois {
-  padding: 20px;
+/* On affiche la section responsive seulement sur des écrans plus petits */
+@media (max-width: 768px) {
+  .web-section {
+    display: none; /* Cache la version web */
+  }
 
-  .comment-marche {
-    text-align: center;
-    margin-bottom: 20px;
-
-    h1 {
-      font-size: 2em;
-      margin: 0;
-    }
+  .responsive-section {
+    display: block; /* Affiche la version responsive */
   }
 
   .slides {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    position: relative;
+    overflow: hidden; /* Empêche les débordements */
+  }
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-      position: relative;
-    }
+  .slide {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto; /* Ajuste à la hauteur du contenu */
+  }
 
-    .slide {
-      flex: 1;
-      margin: 10px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 30px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      background-color: #fff;
-      position: relative;
-
-      @media (max-width: 768px) {
-        display: none;
-        flex: none;
-        margin: 0;
-        padding: 20px 10px;
-
-        &.active {
-          display: block;
-        }
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50px;
-        height: 50px;
-        background: radial-gradient(
-          circle at top,
-          #8dc63c 0%,
-          #8dc63c 30%,
-          transparent 30%
-        );
-        z-index: -1;
-
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-
-      .room {
-        img {
-          max-width: 100%;
-          height: auto;
-          margin-bottom: 20px;
-        }
-
-        h2 {
-          font-size: 1.5em;
-          margin-bottom: 10px;
-          color: #333;
-        }
-
-        p {
-          font-size: 1em;
-          color: #666;
-        }
-      }
-    }
-
-    .slide.active &::before {
-      background: radial-gradient(
-        circle at top,
-        #8dc63c 0%,
-        #8dc63c 30%,
-        transparent 30%
-      );
-    }
+  .slide.active {
+    display: block;
   }
 
   .navigation {
-    display: none;
+    position: absolute;
+    top: 50%; /* Centrer verticalement par rapport au milieu de la slide */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* Empêche d’interférer avec la slide */
+  }
 
-    @media (max-width: 768px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
+  .nav-button-prev,
+  .nav-button-next {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4caf50;
+    cursor: pointer;
+    pointer-events: auto; /* Active les boutons */
+  }
 
-    .nav-button {
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-      color: #333;
-    }
+  .nav-button-prev {
+    position: absolute;
+    left: 2px; /* À 2px du bord gauche de la slide */
+  }
 
-    .dots {
-      display: flex;
-      margin: 0 10px;
+  .nav-button-next {
+    position: absolute;
+    right: 2px; /* À 2px du bord droit de la slide */
+  }
 
-      .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 5px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        cursor: pointer;
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
 
-        &.active {
-          background-color: #717171;
-        }
-      }
-    }
+/* Styles pour les slides côté à côté (Web) */
+@media (min-width: 769px) {
+  .responsive-section {
+    display: none; /* Cache la version responsive */
+  }
+
+  .web-section {
+    display: block; /* Affiche la version web */
+  }
+
+  .web-section .slides {
+    display: flex; /* Affiche les slides en ligne */
+    justify-content: center; /* Centre les slides */
+    width: 100%;
+  }
+
+  .web-section .slide {
+    flex: 1; /* Chaque slide occupe une portion égale de l'espace disponible */
+    padding: 2rem;
+    text-align: center;
+    margin: 0 1%; /* Espace entre les slides */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0f7fa;
+    transition: all 0.3s ease;
+  }
+
+  /* La slide active (celle du milieu) aura un encadré */
+  .web-section .slide.active {
+    border: 3px solid #4caf50; /* Bordure verte pour la slide active */
+    background-color: #ffffff; /* Fond blanc pour la slide active */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée pour la slide active */
   }
 }
