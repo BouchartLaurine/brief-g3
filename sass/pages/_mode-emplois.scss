@@ -1,10 +1,9 @@
 /* Main Content Styles for Responsive Version */
 .responsive-section {
-  padding: 2rem;
   background-color: #fff;
   margin: 2rem auto;
   max-width: 1200px;
-  border-radius: 8px; /*
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: none; /* Masquée par défaut */
 }
@@ -50,7 +49,7 @@
     background: none;
     border: none;
     font-size: 2rem;
-    color: #4caf50;
+    color: #11c911;
     cursor: pointer;
     pointer-events: auto; /* Active les boutons */
   }
@@ -87,22 +86,51 @@
     justify-content: center; /* Centre les slides */
     width: 100%;
   }
-
+  .web-section .use-calculateur {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 1, 0, 0.1);
+    background-color: #ffffff;
+  }
   .web-section .slide {
     flex: 1; /* Chaque slide occupe une portion égale de l'espace disponible */
     padding: 2rem;
     text-align: center;
     margin: 0 1%; /* Espace entre les slides */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #e0f7fa;
+
     transition: all 0.3s ease;
   }
 
   /* La slide active (celle du milieu) aura un encadré */
   .web-section .slide.active {
-    border: 3px solid #4caf50; /* Bordure verte pour la slide active */
+    border: 3px solid #a6aaa6; /* Bordure verte pour la slide active */
     background-color: #ffffff; /* Fond blanc pour la slide active */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée pour la slide active */
   }
+}
+
+.dot {
+  border: 1px solid red; /* Ajoutez une bordure temporaire pour vérifier la visibilité */
+}
+
+/* Styles pour les points de navigation */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 20px; /* Augmentez la hauteur */
+  width: 20px; /* Augmentez la largeur */
+  margin: 0 5px; /* Ajoutez un espacement entre les dots */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #717171;
 }
