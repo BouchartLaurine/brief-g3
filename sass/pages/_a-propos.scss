@@ -1,10 +1,9 @@
 /******a-propos *******/
- // container propos main containtes size setting
+ /* container propos main containtes size setting*/
 .propo_main{
   width: 100%; 
   margin: -20px -10px;
-  overflow: hidden; // hide over 1page
-  //border: 2px solid saddlebrown;
+  overflow: hidden; /* hide over 1page*/
 
   .footer{
     position: fixed;
@@ -16,11 +15,10 @@
 /*setting container of slider 2pages*/ 
 .slider_container{
 display: flex; 
-width: 200%;// two pages side by side
+width: 200%; /* two pages side by side*/
 box-sizing: border-box;
 height: 1000px;
 padding-top: 20px;
-//border: 2px solid black;
 }
 
 /* setting each page*/
@@ -30,35 +28,30 @@ position: relative;
 min-width: 100vw;
 display: flex;
 transition: all 1s; 
-//border: 3px solid red;
 
 /* setting page of background image and > */
 .page_1_Back{ 
 display: flex;
 min-width: 100%;
-//border: 3px solid olive;
 }
 /* for image of page1*/
 .image1{
   width: 90%;
   height: 100%;
-  //border: 3px solid green;
 }
 /* for image of 2nd page*/
 .image2{
   position: absolute;
   top :-10px;
   right : -250px;
-  width: 65% ; // set size of image
-  //border: 7px solid rgb(111, 0, 128);
+  width: 65% ; /* set size of image*/
 }
 
 li{
   color: $accent-color;
-  padding-top: 30px;
-  padding-left: 40px;
+  //padding-top: 0;
+  //padding-left: 40px;
   font-size: 80px;
-  //border: 3px solid rgb(255, 153, 0);
 }
 h1{
   color: $text-color;
@@ -71,13 +64,12 @@ h1{
   padding: 0 40px;
   margin: 0 10px;
   align-content: center;
-  //border: 10px solid rgb(81, 0, 128); 
   }
 
 
 /*green round box*/
 .green-box {
-position: absolute;   position: absolute;   // overlap multiple images
+position: absolute;   position: absolute;   /* overlap multiple images*/
 background: linear-gradient(to bottom right, $accent-color, $compteur-color);
 top: 260px;
 left: -10px;
@@ -89,34 +81,32 @@ margin-right: 1000px;
 }
 /*image leaf*/
 .leaf-img{
-position: absolute;   // overlap multiple images
+position: absolute;   /* overlap multiple images*/
 top:-150px;
 left: 100px;
 width: 500px;
 height: 500px;
-//border: 3px solid #73AD21;
 }
 /*imag ecran*/
 .display-img{
-position: absolute;   // overlap multiple images
+position: absolute;   /* overlap multiple images*/
 top: 20px;
 left: 150px;
 width: 440px;
 height: 440px;
-// border: 3px solid #73AD21;
 }
 
 /*setting title text position*/
 .titelPropo{
   display: flex;
   position: absolute;
-  top: 150px;
+  top: 110px;
 }
   .titelPropo_1{
-    left: 1000px;
+    left: 1050px;
   }
   .titelPropo_2{
-    left: 300px;
+    left: 380px;
   }
 
 /*setting phrases position*/
@@ -154,7 +144,6 @@ color: $accent-color;
 font-size: 60px;
 font-weight: 1000;
 align-items: center;
-
 }
 
 /***start set media 1366px***/
@@ -209,7 +198,7 @@ align-items: center;
 @media screen and (max-width: 768px){
   .footer{
     margin-left: 10px;
-    background-color: #ffffff; // set backgrond transparent to white
+    background-color: #ffffff; /* set backgrond transparent to white*/
     }
 /*setting title text position*/
 .titelPropo{
@@ -246,15 +235,12 @@ align-items: center;
   }
 /* each pages image position*/
   .image1{
-  //  width: 90%;
     height: 40%;
   }
   /* for image of 2nd page*/
   .image2{
     top: 120px;
     left : 400px;
-  //  width: 65% ; // set size of image
-   // border: 7px solid rgb(111, 0, 128);
   }
     
 /*setting width size space for changepage */
@@ -279,12 +265,10 @@ align-items: center;
 .green-box {
   top:120px;  
   left :-20px;
-  //width: 40%;
   height : 150px;
 }
 /*image leaf*/
 .leaf-img{
-  //position: absolute;   // overlap multiple images
   top:-190px;
   left: 60px;
   width: 250px;
@@ -308,7 +292,7 @@ align-items: center;
 @media screen and (max-width: 360px){
 /*text position setting for each page*/
   .titelPropo{
-    top: 15px;
+    top: 0;
     left: 10px;
     padding-top: 0;
   }
@@ -332,7 +316,6 @@ align-items: center;
   .page_1_Back{
   min-width: 360px;
   height: 300px;
-  //border: 5px solid orange;
   }
   .image1{
     width: 70%;
@@ -343,20 +326,18 @@ align-items: center;
     left: 80px; 
     width: 60%;
     height : 160px;
-     //border: 5px solid olive;
   }
 
-  //setting width size space for changepage 
+  /* width size space for changepage */
 .changePage{  
   width: 30px;
   height: 100%;
-  //border: 5px solid olive;
   }
 
 
   h1{
     padding:0 40px 10px 20px;
-   }
+  }
 
   /*green round box*/
   .green-box {
@@ -369,7 +350,7 @@ align-items: center;
   }
   /*image leaf*/
   .leaf-img{
-    position: absolute;   // overlap multiple images
+    position: absolute;   /*overlap multiple images*/ 
     top:-200px;
     left: 50px;
     width: 210px;
