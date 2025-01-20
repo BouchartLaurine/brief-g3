@@ -8,11 +8,19 @@ CO2 WEB est une application web **dédiée à la réduction des émissions de CO
 
 # Fonctionnalités :construction_worker:
 
-    Trouver un Vélib : Cette page contient un compte a rebours, en attendant l’implémentation de la recherche en temps réel.
+    Trouver un Vélib : Cette page contient un compte a rebours,
+
+    en attendant l’implémentation de la recherche en temps réel.
 
 ---
 
-    Calculateur de CO2 : Estime la quantité de CO2 émise lors de vos trajets, via vos distance parcourue par jour (en kilomètres), le nombre de jours travaillés (par semaines). Vos émissions de CO2 seront calculé en kilogrammes par mois
+    Calculateur de CO2 : Estime la quantité de CO2 émise lors de vos trajets,
+
+     via vos distance parcourue par jour (en kilomètres),
+
+      le nombre de jours travaillés (par semaines).
+
+      Vos émissions de CO2 seront calculé en kilogrammes par mois
 
 ---
 
@@ -37,7 +45,7 @@ Elle s'adapte dynamiquement pour garantir une expérience utilisateur optimale.
 
 # Installation
 
-### Prérequis
+### Prérequis
 
 Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre machine :
 

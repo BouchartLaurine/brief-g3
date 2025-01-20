@@ -112,7 +112,7 @@
 }
 // ....................................................
 // Responsive
-
+// Mobile
 @media (max-width: 360px) {
   .cercle-vert-fonce-cal {
     display: none !important;
@@ -173,39 +173,41 @@
     margin-left: 5%;
   }
 }
+// Tablette
+/*
+@media (max-width: 768px) {
+  .cercle-vert-fonce-cal {
+    display: none !important;
+  }
 
-// @media (max-width: 768px) {
-//   .cercle-vert-fonce-cal {
-//     display: none !important;
-//   }
+  .title-cal {
+    display: none;
+  }
 
-//   .title-cal {
-//     display: none;
-//   }
+  .title-cal-resp {
+    display: inline;
+    margin-left: 5%;
+  }
 
-//   .title-cal-resp {
-//     display: inline;
-//     margin-left: 5%;
-//   }
+  .body-cal {
+    .form-bg-cal {
+      margin-left: 5%;
+      width: 35rem;
+      max-width: 25rem;
+      max-height: 35rem;
+      padding: 15%;
+    }
 
-//   .body-cal {
-//     .form-bg-cal {
-//       margin-left: 5%;
-//       width: 35rem;
-//       max-width: 25rem;
-//       max-height: 35rem;
-//       padding: 15%;
-//     }
-
-//     .form-group {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       margin-bottom: 25px;
-//     }
-//   }
-// }
-
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+  }
+}
+*/
+// NoteBook
 @media (max-width: 1366px) {
   .cercle-vert-fonce-cal {
     display: none;
@@ -256,7 +258,7 @@
     }
   }
 }
-
+// Desktop
 @media (max-width: 1920px) {
   .body-cal {
     background:
