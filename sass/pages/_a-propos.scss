@@ -141,6 +141,9 @@ border-top: 4px solid ;
 width: 300px;
 border-image:linear-gradient(to right, $accent-color, $compteur-color) 1 ;
 }
+.greenBar2{
+  border: none;
+  }
 
 /*  change page '>' '<' font */
 .Change{  
@@ -319,6 +322,11 @@ align-items: center;
   .greenBar{
     width: 100px;
   }
+  .greenBar2{
+    border-top: 4px solid ;
+    width: 100px;
+    border-image:linear-gradient(to right, $accent-color, $compteur-color) 1 ;
+    }
 
 /* setting page of background image*/
   .page_1_Back{
