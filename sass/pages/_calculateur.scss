@@ -85,7 +85,7 @@
 
 // Img background
 .body-cal {
-  background:
+  background-image:
     // Feuilles
     url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
     url(/ressources/co2WEB/co2WEB/feuille.svg),
@@ -123,7 +123,8 @@
   }
   .title-cal-resp {
     display: inline;
-    margin-left: 10%;
+
+    text-align: start;
   }
   .votre-distance {
     display: none;
@@ -230,7 +231,7 @@
   }
 
   .body-cal {
-    background:
+    background-image:
         // Feuilles
       url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
       url(/ressources/co2WEB/co2WEB/feuille.svg),
@@ -261,7 +262,7 @@
 // Desktop
 @media (max-width: 1920px) {
   .body-cal {
-    background:
+    background-image:
        // Feuilles
       url(/ressources/co2WEB/co2WEB/trois-feuilles.svg),
       url(/ressources/co2WEB/co2WEB/feuille.svg),
