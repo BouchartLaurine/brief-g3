@@ -1,10 +1,7 @@
 /* Main Content Styles for Responsive Version */
 .responsive-section {
   background-color: #fff;
-  margin: 2rem auto;
   max-width: 1200px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: none; /* Masquée par défaut */
 }
 
@@ -18,56 +15,140 @@
     display: block; /* Affiche la version responsive */
   }
 
+  .comment-marche h1 {
+    text-align: center; /* Centre le titre */
+    margin-bottom: 1rem; /* Réduit l'espace sous le titre */
+    color: #333; /* Couleur du titre */
+    font-family: "Arial", sans-serif; /* Police du titre */
+    font-size: 1.5rem; /* Taille du titre */
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
   .slides {
     position: relative;
     overflow: hidden; /* Empêche les débordements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem 3rem;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .slide {
     display: none;
     position: relative;
-    width: 100%;
-    height: auto; /* Ajuste à la hauteur du contenu */
+    width: 370px;
+    height: 400px;
+    padding: 1rem 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: none;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, opacity 0.3s ease,
+      background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    text-align: center;
   }
 
   .slide.active {
     display: block;
+    border: none; /* Supprime la bordure autour de la slide active */
+  }
+
+  .slide img {
+    width: 135px; /* Agrandit la taille de l'image */
+    height: 135px;
+    margin: 0 auto 1rem; /* Centre l'image et ajoute un espace en dessous */
+    display: block; /* Supprime l'espace en dessous de l'image */
+  }
+
+  .slide h2 {
+    color: #333; /* Couleur du sous-titre */
+    font-family: "Arial", sans-serif; /* Police du sous-titre */
+    font-size: 1.3rem; /* Taille du sous-titre */
+    margin-bottom: 1rem; /* Espace en dessous du sous-titre */
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .slide p {
+    color: #666; /* Couleur du texte */
+    font-family: "Arial", sans-serif; /* Police du texte */
+    font-size: 1rem; /* Taille du texte */
+    line-height: 1.5; /* Espacement entre les lignes */
+    max-width: 80%; /* Limite la largeur du texte pour éviter qu'il ne dépasse */
+    margin: 0 auto; /* Centre le texte */
   }
 
   .navigation {
     position: absolute;
-    top: 50%; /* Centrer verticalement par rapport au milieu de la slide */
+    top: 40%; /* Positionne les boutons au milieu de la slide */
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
     pointer-events: none; /* Empêche d’interférer avec la slide */
+    transform: translateY(-50%); /* Centre verticalement les boutons */
   }
 
   .nav-button-prev,
   .nav-button-next {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #11c911;
+    width: 30px; /* Ajustez la largeur selon vos besoins */
+    height: 30px; /* Ajustez la hauteur selon vos besoins */
     cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent; /* Fond transparent */
+    border: none; /* Pas de bordure */
     pointer-events: auto; /* Active les boutons */
+    position: absolute;
+    top: 50%; /* Centre verticalement les boutons */
+    transform: translateY(-50%); /* Centre verticalement les boutons */
   }
 
   .nav-button-prev {
-    position: absolute;
-    left: 2px; /* À 2px du bord gauche de la slide */
+    background-image: url(/ressources/co2WEB/co2WEB/img-<.png); /* Assurez-vous que le chemin est correct */
+    left: 10px; /* À 10px du bord gauche de la slide */
   }
 
   .nav-button-next {
-    position: absolute;
-    right: 2px; /* À 2px du bord droit de la slide */
+    background-image: url(/ressources/co2WEB/co2WEB/img->.png); /* Assurez-vous que le chemin est correct */
+    right: 10px; /* À 10px du bord droit de la slide */
+    margin-right: 10px;
   }
 
   .dots {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px; /* Réduit l'écart entre les points et l'image */
+    gap: 0.8rem;
+  }
+
+  .dot {
+    cursor: pointer;
+    width: 10px; /* Ajustez la largeur */
+    height: 10px; /* Ajustez la hauteur */
+    margin: 0 5px; /* Ajoutez un espacement entre les dots */
+    background-color: rgb(194, 211, 226);
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .dot.active {
+    background-color: #11c911; /* Couleur verte pour les dots actifs */
   }
 }
 
@@ -96,7 +177,6 @@
     padding: 2rem;
     text-align: center;
     margin: 0 1%; /* Espace entre les slides */
-
     transition: all 0.3s ease;
   }
 
@@ -106,31 +186,4 @@
     background-color: #ffffff; /* Fond blanc pour la slide active */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée pour la slide active */
   }
-}
-
-.dot {
-  border: 1px solid red; /* Ajoutez une bordure temporaire pour vérifier la visibilité */
-}
-
-/* Styles pour les points de navigation */
-.dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.dot {
-  cursor: pointer;
-  height: 20px; /* Augmentez la hauteur */
-  width: 20px; /* Augmentez la largeur */
-  margin: 0 5px; /* Ajoutez un espacement entre les dots */
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot.active,
-.dot:hover {
-  background-color: #717171;
 }
