@@ -9,23 +9,27 @@ CO2 WEB est une application web **dédiée à la réduction des émissions de CO
 # Fonctionnalités :construction_worker:
 
     Trouver un Vélib : Cette page contient un compte a rebours, en attendant l’implémentation de la recherche en temps réel.
-    Calculateur de CO2 : Estime la quantité de CO2 émise lors de vos trajets.
+
+---
+
+    Calculateur de CO2 : Estime la quantité de CO2 émise lors de vos trajets, via vos distance parcourue par jour (en kilomètres), le nombre de jours travaillés (par semaines). Vos émissions de CO2 seront calculé en kilogrammes par mois
 
 ---
 
 # Technologies utilisées :tools:
 
-      ** Frontend : **
-       `HTML5
-         CSS3
-        JavaScript`
+       Frontend :
+       HTML5
+       CSS3
+       JavaScript
 
 ---
 
-# Design responsive :mobile_phone: :computer:
+# Design responsive :computer:
 
 L'application est optimisée pour les dimensions suivantes :
-Mobile : 360x800
+
+> Mobile : 360x800 sur toute les pages
 
 Elle s'adapte dynamiquement pour garantir une expérience utilisateur optimale.
 
@@ -33,21 +37,23 @@ Elle s'adapte dynamiquement pour garantir une expérience utilisateur optimale.
 
 # Installation
 
-_Prérequis_
+### Prérequis
 
 Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre machine :
 
-> `Node.js (pour le frontend et/ou backend)
+> Node.js (pour le frontend et/ou backend)
+>
 > npm ou yarn (pour la gestion des dépendances)
 
-Étapes d'installation
+### Étapes d'installation
 
     Clonez ce repository sur votre machine locale :
 
 > git clone https://github.com/username/co2-web.git
+>
 > cd co2-web
 
-    Installez les dépendances nécessaires :
+### Installez les dépendances nécessaires :
 
 > npm install
 
@@ -61,7 +67,10 @@ Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre
 
 # Équipe de développement :man_technologist: :woman_technologist: :
 
-    https://github.com/BouchartLaurine
-    https://github.com/Yassine59simplon
-    https://github.com/yukamoy
-    https://github.com/ZIAINAyoussef
+https://github.com/BouchartLaurine
+
+https://github.com/yukamoy
+
+https://github.com/Yassine59simplon
+
+https://github.com/ZIAINAyoussef
